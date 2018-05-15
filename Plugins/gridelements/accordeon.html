@@ -1,0 +1,17 @@
+<f:format.html parseFuncTSPath="">{header}</f:format.html>
+<div class="accordeonWrapper {data.flexform_style}">
+    <f:for each="{data.tx_gridelements_view_children}" as="foldoutElement" iteration="index">
+        <div class="item">
+            <h3 class="opener" data-status="{f:if(condition:'{index.isFirst}',then:'open',else:'close')}">
+                {foldoutElement.header}
+                <span class="status">
+                    <i class="fa fa-angle-down"></i>
+                    <i class="fa fa-angle-up"></i>
+                </span>
+            </h3>
+            <div class="foldout" style="{f:if(condition:'{index.isFirst}',then:'display:block;',else:'display:none;')}">
+                <f:cObject typoscriptObjectPath="lib.fluidobjects.record" data="{foldoutElement.uid}"></f:cObject>
+            </div>
+        </div>
+    </f:for>
+</div>

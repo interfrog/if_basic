@@ -7,5 +7,4 @@ lib.footerContent {
     languageField = sys_language_uid
   }
   slide = -1
-  renderObj < tt_content
 }

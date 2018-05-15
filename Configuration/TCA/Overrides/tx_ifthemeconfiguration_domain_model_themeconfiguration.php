@@ -3,7 +3,7 @@
 $extKey = 'if_basic';
 $themeconfigKey = 'if_themeconfiguration';
 
-$temporaryThemeColumn = array(    
+$temporaryThemeColumn = array(
     'name' => array(
         'label'=>'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.name',
         'config' => array(
@@ -26,7 +26,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.pagebg',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -42,7 +41,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.pagetitlecolor',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -51,7 +49,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.font',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_font.name ASC',
         ),
@@ -61,7 +58,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -73,7 +69,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -95,7 +90,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.pagetitle2color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -104,7 +98,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.font',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_font.name ASC',
         ),
@@ -114,7 +107,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -126,7 +118,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -141,7 +132,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.mainmenutype',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array(
                 array('Standard','standard'),
                 array('Typ 1','type1'),
@@ -153,7 +143,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -172,7 +161,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.font',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_font.name ASC',
         ),
@@ -182,7 +170,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -265,7 +252,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.headerbordercolor',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC'
         ),
@@ -285,7 +271,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenutext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -294,7 +279,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenubackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -303,7 +287,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenuborder',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -312,7 +295,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenuhinttext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -321,7 +303,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenuhintbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -330,7 +311,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.headerbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -339,7 +319,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navbarbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -348,7 +327,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navtext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -357,7 +335,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navtexthover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -366,7 +343,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -375,7 +351,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navtextactive',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -384,7 +359,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navbackgroundhover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -393,7 +367,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.navbackgroundactive',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -402,7 +375,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2text',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -411,7 +383,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2texthover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -420,7 +391,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2textactive',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -429,7 +399,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2background',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -438,7 +407,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2backgroundhover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -447,7 +415,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2backgroundactive',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -457,7 +424,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasopener',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -466,7 +432,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvastext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -475,7 +440,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -484,7 +448,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasactive',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -493,7 +456,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.footertext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -502,7 +464,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.footerbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -511,7 +472,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -523,7 +483,6 @@ $temporaryThemeColumn = array(
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.emptyfont',0)
             ),
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'minitems' => 0,
             'maxitems' => 1
@@ -534,7 +493,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -546,7 +504,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -561,7 +518,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -573,7 +529,6 @@ $temporaryThemeColumn = array(
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.emptyfont',0)
             ),
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'minitems' => 0,
             'maxitems' => 1
@@ -584,7 +539,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -596,7 +550,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -611,7 +564,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -623,7 +575,6 @@ $temporaryThemeColumn = array(
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.emptyfont',0)
             ),
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'minitems' => 0,
             'maxitems' => 1
@@ -634,7 +585,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -646,7 +596,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -661,7 +610,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -673,7 +621,6 @@ $temporaryThemeColumn = array(
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.emptyfont',0)
             ),
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'minitems' => 0,
             'maxitems' => 1
@@ -684,7 +631,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -696,7 +642,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -711,7 +656,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.color',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -723,7 +667,6 @@ $temporaryThemeColumn = array(
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.emptyfont',0)
             ),
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_font',
             'minitems' => 0,
             'maxitems' => 1
@@ -734,7 +677,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.normal' ,'normal'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontstyle.italic' ,'italic'),
@@ -746,7 +688,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.200' ,'200'),
                 array('LLL:EXT:'.$themeconfigKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.fontweight.300' ,'300'),
@@ -761,7 +702,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.formfieldbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -770,7 +710,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.formborder',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -779,7 +718,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.formborderfocus',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -788,7 +726,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.formbutton',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -797,7 +734,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.formbuttonhover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -806,7 +742,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.link',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -815,7 +750,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.linkhover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -824,7 +758,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.buttonbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -833,7 +766,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.buttontext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -842,7 +774,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.buttonbackgroundhover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -851,7 +782,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.buttontexthover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -860,7 +790,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.overlayboxtext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -869,7 +798,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.overlayboxbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -878,7 +806,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.divider',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -887,7 +814,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.accopenerbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -896,7 +822,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.accopenertext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -905,7 +830,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.accopenerhover',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -914,7 +838,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.accfoldoutbackground',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -923,7 +846,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.accfoldouttext',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'foreign_table' => 'tx_ifthemeconfiguration_domain_model_color',
             'foreign_table_where' => 'ORDER BY tx_ifthemeconfiguration_domain_model_color.name ASC',
         ),
@@ -962,7 +884,6 @@ $temporaryThemeColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.copyrighttheme',
         'config' => array(
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array(
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.copyrightthemebright','bright'),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tx_ifthemeconfiguration_domain_model_themeconfiguration.copyrightthemedark','dark'),

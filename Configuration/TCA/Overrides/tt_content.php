@@ -71,7 +71,6 @@ $temporaryColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.sourcetype',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.sourcetype.default' ,''),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.sourcetype.vimeo' ,'vimeo'),
@@ -84,7 +83,6 @@ $temporaryColumn = array(
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.ratio',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('16:9' ,''),
                 array('4:3' ,'regular')
@@ -194,7 +192,7 @@ $GLOBALS['TCA']['tt_content']['ctrl']['requestUpdate'] .= ',sourcetype';
  */
 $GLOBALS['TCA']['tt_content']['types']['videoframe']['showitem'] = '
 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header,ifbasic
+--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header,
 --div--;LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.div.videoframe,
 sourcetype,
 url,
@@ -207,55 +205,13 @@ url,
 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
 --div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,tx_gridelements_container,tx_gridelements_columns';
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
-   array(
-      'LLL:EXT:if_basic/Resources/Private/Language/locallang.xlf:videoframe',
-      'videoframe',
-      'EXT:if_basic/Resources/Public/Icons/video.svg'
-   ),
-   'CType',
-   'if_basic'
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
+    $extKey.' Special',
+    '--div--'
 );
 
-/**
- * Overlaybox
- */
-$GLOBALS['TCA']['tt_content']['types']['overlaybox']['showitem'] = '
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-header,header_link,image,bodytext,
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.mediaAdjustments;mediaAdjustments,
---div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
---div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
---palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
---div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
---div--;LLL:EXT:gridelements/Resources/Private/Language/locallang_db.xlf:gridElements,tx_gridelements_container,tx_gridelements_columns';
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
-   array(
-      'LLL:EXT:if_basic/Resources/Private/Language/locallang.xlf:overlaybox',
-      'overlaybox',
-      'EXT:if_basic/Resources/Public/Icons/overlaybox.svg'
-   ),
-   'CType',
-   'if_basic'
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
+    'Video-Frame-Element',
+    'videoframe',
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($extKey) . 'Resources/Public/Icons/video.svg'
 );
-
-// $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-//     $extKey.' Special',
-//     '--div--'
-// );
-
-// $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-//     'Overlay-Box',
-//     'overlaybox',
-//     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($extKey) . 'Resources/Public/Icons/overlaybox.svg'
-// );
-
-// $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
-//     'Video-Frame-Element',
-//     'videoframe',
-//     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($extKey) . 'Resources/Public/Icons/video.svg'
-// );

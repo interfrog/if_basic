@@ -3,6 +3,7 @@ lib.rowWrap {
   # if.isInList.field = CType
   # if.value = div,shortcut
   # if.negate = 1
+
   10 = COA
   10 {
     if.equals.field = tx_gridelements_container
@@ -25,7 +26,7 @@ lib.rowWrap {
           stdWrap.noTrimWrap = | ||
           10 = CASE
           10 {
-            key.field = frame_class
+            key.field = section_frame
             default = TEXT
             default {
               value = regularPadding

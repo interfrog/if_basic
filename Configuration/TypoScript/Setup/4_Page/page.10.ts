@@ -8,10 +8,9 @@ page {
 
   10 = FLUIDTEMPLATE
   10 {
-    templateName = Page
-    partialRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Partials/Page/
-    layoutRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Layouts/Page/
-    templateRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Templates/Page/
+    file = EXT:{$config.extensionDirectory}/Resources/Private/Templates/DefaultTemplate.html
+    partialRootPath = EXT:{$config.extensionDirectory}/Resources/Private/Partials/
+    layoutRootPath = EXT:{$config.extensionDirectory}/Resources/Private/Layouts/
     variables {
 
       headerContent < lib.headerContent

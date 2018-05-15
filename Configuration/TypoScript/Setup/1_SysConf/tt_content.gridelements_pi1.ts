@@ -1,29 +1,50 @@
 tt_content.gridelements_pi1.20.10.setup {
 	twocolset < lib.gridelements.defaultGridSetup
 	twocolset {
-		columns.default.renderObj >
-		columns.default.renderObj =< tt_content
 		cObject = FLUIDTEMPLATE
 		cObject {
-			templateName = TwoColSet
-			layoutRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Layouts/Content/
-			partialRootPaths {
-				0 = EXT:fluid_styled_content/Resources/Private/Partials/
-				10 = EXT:{$config.extensionDirectory}/Resources/Private/Partials/Content/
+			file = {$config.pluginPath}/gridelements/twoColSet.html
+			variables {
+				header < lib.stdheader
+				layout = TEXT
+				layout.field = layout
 			}
-			templateRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Templates/Content/
 		}
 	}
 	threecolset < .twocolset
-	threecolset.cObject.templateName = ThreeColSet
+	threecolset {
+		cObject {
+			file = {$config.pluginPath}/gridelements/threeColSet.html
+		}
+	}
 	fourcolset < .twocolset
-	fourcolset.cObject.templateName = FourColSet
+	fourcolset {
+		cObject {
+			file = {$config.pluginPath}/gridelements/fourColSet.html
+		}
+	}
 	fivecolset < .twocolset
-	fivecolset.cObject.templateName = FiveColSet
+	fivecolset {
+		cObject {
+			file = {$config.pluginPath}/gridelements/fiveColSet.html
+		}
+	}
 	sixcolset < .twocolset
-	sixcolset.cObject.templateName = SixColSet
+	sixcolset {
+		cObject {
+			file = {$config.pluginPath}/gridelements/sixColSet.html
+		}
+	}
 	fullslider < .twocolset
-	fullslider.cObject.templateName = FullSlider
+	fullslider {
+		cObject {
+			file = {$config.pluginPath}/gridelements/fullSlider.html
+		}
+	}
 	accordeon < .twocolset
-	accordeon.cObject.templateName = Accordeon
+	accordeon {
+		cObject {
+			file = {$config.pluginPath}/gridelements/accordeon.html
+		}
+	}
 }

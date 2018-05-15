@@ -9,18 +9,6 @@
 			<trans-unit id="ajaxFileUpload.allowedFileExt">
 				<source>Allowed file types</source>
 			</trans-unit>
-			<trans-unit id="videoframe">
-				<source>Video-Frame Element</source>
-			</trans-unit>
-			<trans-unit id="videoframe.description">
-				<source>Creates a responsive video element with sources from Youtube, Vimeo or simple Iframe. Some options are configurable</source>
-			</trans-unit>
-			<trans-unit id="overlaybox">
-				<source>Overlay-Box</source>
-			</trans-unit>
-			<trans-unit id="overlaybox.description">
-				<source>Creates a picturebox with slide in text on mouseover</source>
-			</trans-unit>
 		</body>
 	</file>
 </xliff>

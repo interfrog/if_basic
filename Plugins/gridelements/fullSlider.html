@@ -1,0 +1,48 @@
+<div class="fullScreenSlider slickSlider" data-autoplay="{data.flexform_autoplay}" data-autospeed="{f:if(condition:'{data.flexform_autoplaySpeed}>0',then:'{data.flexform_autoplaySpeed}',else:'6400')}" data-slideSpeed="{f:if(condition:'{data.flexform_autoplaySpeed}>0',then:'{data.flexform_slideSpeed}',else:'300')}" data-mode="{data.flexform_mode}">
+    <f:for each="{data.tx_gridelements_view_raw_columns}" as="column">
+        <f:for each="{column}" as="slideElement">
+            <f:switch expression="{data.flexform_mode}">
+                <f:case value="inline">
+                    <f:if condition="{slideElement.header_link}">
+                        <f:then>
+                            <f:link.page class="slideItem" pageUid="{slideElement.header_link}">
+                                {f:cObject(typoscriptObjectPath:'lib.fluidobjects.sliderimage',data:'{slideElement.uid}')}
+                                <f:if condition="{slideElement.header}">
+                                    <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
+                                </f:if>
+                            </f:link.page>
+                        </f:then>
+                        <f:else>
+                            <div class="slideItem">
+                                {f:cObject(typoscriptObjectPath:'lib.fluidobjects.sliderimage',data:'{slideElement.uid}')}
+                                <f:if condition="{slideElement.header}">
+                                    <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
+                                </f:if>
+                            </div>     
+                        </f:else>
+                    </f:if>
+                </f:case>
+                <f:case default="TRUE">
+                    <f:if condition="{slideElement.header_link}">
+                        <f:then>
+                            <f:link.page class="slideItem" pageUid="{slideElement.header_link}">
+                                <div class="innerImage" style="background-image: url('/{f:cObject(typoscriptObjectPath:'lib.fluidobjects.backgroundResource',data:'{slideElement.uid}')}')">
+                                    <f:if condition="{slideElement.header}">
+                                        <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
+                                    </f:if>
+                                </div>     
+                            </f:link.page>
+                        </f:then>
+                        <f:else>
+                            <div class="slideItem" style="background-image: url('/{f:cObject(typoscriptObjectPath:'lib.fluidobjects.backgroundResource',data:'{slideElement.uid}')}')">
+                                <f:if condition="{slideElement.header}">
+                                    <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
+                                </f:if>
+                            </div>     
+                        </f:else>
+                    </f:if>
+                </f:case>
+            </f:switch>
+        </f:for>
+    </f:for>
+</div>

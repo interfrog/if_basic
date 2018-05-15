@@ -7,7 +7,6 @@ $temporaryPageColumns = array (
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.iconconfig',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.iconconfig.no' ,''),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.iconconfig.house' ,'fa fa-home'),
@@ -33,7 +32,6 @@ $temporaryPageColumns = array (
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.robots',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.robots.default' ,''),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.robots.nofollow' ,'1'),
@@ -54,7 +52,6 @@ $temporaryPageColumns = array (
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.fblike',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.social.recursive' ,''),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.social.enable' ,'enable'),
@@ -67,7 +64,6 @@ $temporaryPageColumns = array (
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.twitter',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.social.recursive' ,''),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.social.enable' ,'enable'),
@@ -80,7 +76,6 @@ $temporaryPageColumns = array (
         'label' => 'LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.googleplus',
         'config' => array (
             'type' => 'select',
-            'renderType' => 'selectSingle',
             'items' => array (
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.social.recursive' ,''),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:pages.social.enable' ,'enable'),

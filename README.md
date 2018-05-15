@@ -4,14 +4,12 @@ It is the ifPage Basic, a simple styled fully configurated sitepackage. To creat
 
 The following extensions are configured in the sitepackage
 
-- fluid_styled_content (8.7.0.-8.99.99)
-- rte_ckeditor (8.7.0.-8.99.99)
-- if_themeconfiguration (5.0.0-5.99.99)
+- css_styled_content (7.6.0-7.99.99)
 - news (5.3.0-5.99.99)
-- gridelements (8.0.0-8.99.99)
-- powermail (3.8.0-3.21.99)
+- gridelements (7.0.0-7.99.99)
+- powermail (3.8.0-3.99.99)
 - realurl (2.0.0-2.99.99)
-- blog (8.7.0-8.7.9)
+- if_themeconfiguration (1.0.0-1.99.99)
 
 # The theme configuration
 

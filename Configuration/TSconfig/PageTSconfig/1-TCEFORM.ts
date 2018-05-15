@@ -31,15 +31,19 @@ TCEFORM {
 				5 = 1px Rahmen
 			}
 		}
-		frame_class {
-			removeItems = ruler-before,ruler-after,indent,indent-left,indent-right
+		section_frame {
+			removeItems = 1,5,6,10,11,12,20,21
+			altLabels {
+				0 = Bitte wählen Sie Ihr Layout
+				66 = Reines Element ohne Standardisierten Rahmen
+			}
 			addItems {
-				button = Spezial: Button
-				gallery = Spezial: Bilder Gallery
-				leftToRight = Spezial: Bildbox mit Farboverlay (von links)
-				rightToLeft = Spezial: Bildbox mit Farboverlay (von rechts)
-				topToBottom = Spezial: Bildbox mit Farboverlay (von oben)
-				bottomToTop = Spezial: Bildbox mit Farboverlay (von unten)
+				30 = Spezial: Button
+				50 = Spezial: Bilder Gallery
+				60 = Spezial: Bildbox mit Farboverlay (von links)
+				61 = Spezial: Bildbox mit Farboverlay (von rechts)
+				62 = Spezial: Bildbox mit Farboverlay (von oben)
+				63 = Spezial: Bildbox mit Farboverlay (von unten)
 				70 = Kein Abstand
 				71 = Abstand nur Oben
 				72 = Abstand nur Unten

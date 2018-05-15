@@ -1,9 +1,6 @@
 tt_content.videoframe = FLUIDTEMPLATE
 tt_content.videoframe {
-  templateName = Videoframe
-  layoutRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Layouts/Content/
-  partialRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Partials/Content/
-  templateRootPaths.10 = EXT:{$config.extensionDirectory}/Resources/Private/Templates/Content/
+  file = EXT:{$config.extensionDirectory}/Resources/Private/Templates/Videoframe.html
   variables {
     header < lib.stdheader
     colorsheme = RECORDS

@@ -37,5 +37,8 @@ plugin.tx_news {
     templateRootPaths.100 = {$config.pluginPath}/news/Templates/
     layoutRootPaths.100 = {$config.pluginPath}/news/Layouts/
     partialRootPaths.100 = {$config.pluginPath}/news/Partials/
+    templateRootPath = {$config.pluginPath}/news/Templates/
+    layoutRootPath = {$config.pluginPath}/news/Layouts/
+    partialRootPath = {$config.pluginPath}/news/Partials/
   }
 }

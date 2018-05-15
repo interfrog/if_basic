@@ -11,18 +11,6 @@ CREATE TABLE pages (
     googleplus varchar(255) DEFAULT '0' NOT NULL,
 );
 
-#
-# Table structure for table 'pages_language_overlay'
-#
-CREATE TABLE pages_language_overlay (
-    iconconfig varchar(255) DEFAULT '' NOT NULL,
-    seotitle varchar(255) DEFAULT '' NOT NULL,
-    robots varchar(255) DEFAULT '' NOT NULL,
-    canonical varchar(255) DEFAULT '' NOT NULL,
-    fblike varchar(255) DEFAULT '0' NOT NULL,
-    twitter varchar(255) DEFAULT '0' NOT NULL,
-    googleplus varchar(255) DEFAULT '0' NOT NULL,
-);
 
 #
 # Table structure for table 'tt_content'
