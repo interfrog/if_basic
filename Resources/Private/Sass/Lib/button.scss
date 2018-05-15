@@ -1,0 +1,50 @@
+%ifpageButtons {
+  padding: .8em 1.5em;
+  background-color: $buttonbackground;
+  color: $buttontext;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    background-color: $buttonbackgroundhover;
+    color: $buttontexthover;
+  }
+}
+.flat-button {
+  display: inline-block;
+  @extend %ifpageButtons;
+}
+.fullwidth-button {
+  display: block;
+  @extend %ifpageButtons;
+}
+
+.boxed-button {
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  padding: 0.9em 1.5em 0.75em 1.5em;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid $buttonbackground;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:after {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    content: "\f105";
+    display: inline-block;
+    line-height: 0.5em;
+    color: $buttonbackground;
+    vertical-align: middle;
+    margin-left: 0.5em;
+    margin-top: -0.15em;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover {
+    border-color: $buttonbackgroundhover;
+    &:after {
+      color: $buttonbackgroundhover;
+    }
+  }
+}

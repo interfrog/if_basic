@@ -1,0 +1,119 @@
+.powermail_fieldwrap {
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include breakpoint(600px) {
+    padding: 0 1.5em 1em 0;
+  }
+
+  &:not[class^="width-"], 
+  &:not[class*=" width-"] {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    padding: 0px 0px 0.5em 0px;
+  }
+}
+
+.medium-6 {  width: 25%; }
+.medium-8 {  width: 33.333333%; }
+.medium-12 {  width: 50%; }
+.medium-16 {  width: 66.666666%; }
+.medium-18 {  width: 75%; }
+.medium-24 {  width: 100%; }
+
+
+.formError {
+  z-index: 990;
+  .formErrorContent {
+    z-index: 991;
+  }
+  .formErrorArrow {
+    z-index: 996;
+  }
+}
+
+.ui-dialog .formError {
+  z-index: 5000;
+  .formErrorContent {
+    z-index: 5001;
+  }
+  .formErrorArrow {
+    z-index: 5006;
+  }
+}
+
+.inputContainer {
+  position: relative;
+  float: left;
+}
+
+.powermail_fieldwrap_text {
+  line-height: 1.5em;
+}
+
+.powermail_radio_inner {
+  float: left;
+}
+
+.powermail_check_inner {
+  display: block;
+  clear: both;
+  label {
+    display: inline-block;
+  }
+}
+
+.powermail_fieldwrap_tex {
+  margin-top: 0px;
+}
+
+.powermail_fieldwrap {
+  @include clearafter();
+
+  .powermail_check_inner{
+    margin-right: 2em;
+    padding: 0px;
+    display: inline-block;
+    &:first-child{
+      float: left;
+    }
+  }
+
+  .powermail_radio_inner{
+    margin-right: 2em;
+    padding: 0px;
+    display: inline-block;
+    &:first-child{
+      float: left;
+    }
+  }
+}
+
+.powermail_fieldwrap[data-labelposition="left"]{
+  .powermail_label{
+    float: left;
+    padding: 0px;
+    width: 23%;
+  }
+  .powermail_field, .powermail_radio_outer, .powermail_check_outer  {
+    float: right;
+    width: 75%;
+  }
+}
+
+.powermail_fieldwrap[data-labelposition="right"]{
+  .powermail_label{
+    float: right;
+    padding: 0px;
+    width: 23%;
+  } 
+  .powermail_field, .powermail_radio_outer, .powermail_check_outer{
+    float: left;
+    width: 75%;
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for backend layouts</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="Default">Standard (1-spaltig)</label>
+			<label index="1-Col-Header">1-spaltig mit Kopfbereich (Bilder)</label>
+			<label index="2-Col">2-spaltig</label>
+			<label index="2-Col-Header">2-spaltig mit Kopfbereich (Bilder)</label>
+		</languageKey>
+	</data>
+</T3locallang>

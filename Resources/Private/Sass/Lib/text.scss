@@ -1,0 +1,188 @@
+h1 {
+  font-family:$h1font;
+  color: $h1;
+  font-size: 2.5em;
+  font-style: $h1style;
+  font-weight: $h1weight;
+  line-height: 1.25em;
+  margin: 0px 0px 1em 0px;
+}
+
+h2 {
+  font-family:$h2font;
+  color: $h2;
+  font-size: 2em;
+  font-style: $h2style;
+  font-weight: $h2weight;
+  line-height: 1.25em;
+  margin: 0 0 0.5em 0;
+}
+
+h1 + h2 {
+  margin: 0px 0px 1.25em 0px;
+}
+
+h3 {
+  font-family:$h3font;
+  color: $h3;
+  font-size: 1.5em;
+  font-style: $h3style;
+  font-weight: $h3weight;
+  line-height: 1.25em;
+  margin: 0 0 0.25em 0;
+}
+
+h2 + h3 {
+  margin: 0px 0px 0.66666666em 0px;
+}
+
+h4 {
+  font-family:$h4font;
+  color: $h4;
+  font-style: $h4style;
+  font-weight: $h4weight;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+h3 + h4 {
+  margin: 0px 0px 0.3em 0px;
+}
+
+h5 {
+  font-family:$h5font;
+  color: $h5;
+  font-style: $h5style;
+  font-weight: $h5weight;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 0 0 1em 0;
+}
+
+h4 + h5 {
+  margin: 0px 0px 1.25em 0px;
+}
+
+h1,h2,h3,h4,h5 {
+  &.hassub {
+    margin-bottom: 0px;
+  }
+}
+
+ul, ol {
+  margin: 0 0 1.25em 0;
+  padding: 0 0 0 1.25em;
+  line-height: 1.5em;
+}
+
+a {
+  transition: 0.2s;
+  color: $link;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    transition: 0.4s;
+    color: $linkhover;
+  }
+  &.download-button {
+    font-weight: bold;
+    text-decoration: none;
+    &:before {
+      content: "\f019";
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translate(0, 0);
+      margin: 0 0.5em 0 0;
+    }
+  }
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+i,em {
+  font-style: italic;
+}
+
+// i.fa {
+//   transition: 0.3s;
+//   color: #666;
+//   &:hover {
+//     transition: 0.3s;
+//     color: #444;
+//   }
+// }
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1.25em;
+  &.bodytext {
+    margin-bottom: 1.25em;
+  }
+
+  &:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+}
+
+#page .csc-default p a,
+#page .contentElement p a {
+  text-decoration: underline;
+}
+
+blockquote {
+  font-family: serif;
+  font-style: italic;
+  line-height: 1.25em;
+  p {
+    margin-left: 1.5em;
+    &:before {
+      content: "\f10d";
+      font-family: FontAwesome;
+      display: inline-block;
+      margin: -0.3em 0.55em 0 -1.5em;
+      vertical-align: top;
+    }
+    &:after {
+      content: "\f10e";
+      font-family: FontAwesome;
+      display: inline-block;
+      margin: 0 0 -0.3em 0.25em;
+      vertical-align: bottom;
+    }
+  }
+}
+
+.csc-default, .contentElement {
+  ul {
+    list-style-type: disc;
+    display: block;
+    clear: both;
+  }
+  ol {
+    list-style-type: decimal;
+    display: block;
+    clear: both;
+  }
+}
+
+h1,h2,h3,h4,h5,h6,p,li,div {
+  &[data-align="align-center"] {
+    text-align:center;
+  }
+  &[data-align="align-left"] {
+    text-align:left;
+  }
+  &[data-align="align-right"] {
+    text-align:right;
+  }
+  &[data-align="align-justify"] {
+    text-align:justify;
+  }
+}

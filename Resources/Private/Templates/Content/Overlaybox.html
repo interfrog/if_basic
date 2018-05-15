@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:if="http://typo3.org/ns/Interfrog/IfBasic/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="Plain" />
+<f:section name="Main">
+
+	<f:if condition="{images.0}">
+		<f:then>
+			<div class="coloredOverlayBox {f:if(condition:'{data.frame_class}==\'default\'',then:'bottomToTop',else:'{data.frame_class}')}">
+				<div class="image">
+					<f:link.page pageUid="{data.header_link}" class="fancybox">
+						<f:image src="{images.0.uid}" treatIdAsReference="1" width="{f:if(condition:'{data.imagewidth}==0',then:'400',else:'{data.imagewidth}')}" height="{f:if(condition:'{data.imageheight}==0',then:'300c',else:'{data.imageheight}')}"/>
+						<div class="overlay">
+							<h3>{data.header}</h3>
+							{data.bodytext -> f:format.html()}		
+						</div>
+					</f:link.page>
+				</div>
+			</div>
+		</f:then>
+		<f:else>
+			<p class="error">No Images was selected</p>
+		</f:else>
+	</f:if>
+
+</f:section>
+</html>

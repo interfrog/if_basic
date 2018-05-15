@@ -1,0 +1,57 @@
+#searchTopBox {
+  float: right;
+  margin: 0px 0px 0px 4em;
+  h1, h2, h3, h4, h5 {
+    display: none;
+  }
+}
+
+.tx-kesearch-pi1 {
+  form {
+    position: relative;
+  }
+  input[type="text"], #ke_search_sword {
+    background-color: #cfcfcf;
+    border: 0px;
+    appearance: none;
+    box-shadow: none;
+    height: auto;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 0.3em 0.5em;
+    color: #000;
+    display: block;
+  }
+  input[type="text"]:focus, #ke_search_sword:focus {
+    outline: 0px;
+  }
+  input[type="submit"], button[type="submit"], #ke_search_submit {
+    background-color: #cfcfcf;
+    border: 0px;
+    appearance: none;
+    box-shadow: none;
+    height: auto;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 0.28em 0.5em;
+    color: #000;
+    float: right;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.4em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  input[type="submit"]:before, button[type="submit"]:before, #ke_search_submit:before {
+    content: "\f002";
+  }
+}
+
+#maincontent .tx-kesearch-pi1 form {
+  margin: 0px 0px 2em 0px;
+}

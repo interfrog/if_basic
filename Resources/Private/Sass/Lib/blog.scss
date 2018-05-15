@@ -1,0 +1,51 @@
+.blogroll {
+  .article {
+    margin: 0px 0px 3.5em 0px;
+  }
+  .caldate {
+    float: left;
+    margin: 0px 2em 2em 0px;
+
+    span {
+      display: block;
+      clear: both;
+    }
+
+    .day {
+      font-size: 3.5em;
+      text-align: Center;
+      font-weight: bold;
+    }
+
+    .month {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .year {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      margin-top: 0.15em;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin: 0px 0px 2em 0px;
+    @include breakpoint(600px) {
+      float: right;
+      margin: 0 0 2em 2em;
+      max-width: 33%;
+    }
+  }
+
+  .textbox {
+    border-left: 1px solid $divider;
+    padding: 0px 0px 0 2em;
+    display: block;
+    overflow: hidden;
+  }
+}

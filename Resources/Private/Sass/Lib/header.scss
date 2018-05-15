@@ -1,0 +1,125 @@
+header {
+  border-bottom:$headerborderbottom;
+  border-color:$headerbordercolor;
+  &.topline {
+    border-top: 10px solid #008ac2;
+  }
+  #header {
+    padding: 1em 0;
+    background-color: $headerbackground;
+
+    #logo {
+      display:inline-block;
+      vertical-align:middle;
+      margin-right:2em;
+      max-width: 80%;
+    }
+
+    .infos {
+      position: relative;
+      z-index: 1;
+      p {
+      }
+    }
+
+    #pagetitle{
+      display:none;
+      vertical-align:middle;
+      font-size: 1em;
+      width: 100%;
+      margin: 1em 0 0 0;
+      text-align:center;
+      .main{
+        color:$pagetitlecolor;
+        font-size:1.5em;
+        display:block;
+        font-family: $pagetitlefont;
+        font-style: $pagetitlestyle;
+        font-weight: $pagetitleweight;
+        line-height: 1.2em;
+      }
+      .sub{
+        color:$pagetitle2color;
+        display:block;
+        font-family: $pagetitle2font;
+        font-style: $pagetitle2style;
+        font-weight: $pagetitle2weight;
+        line-height: 1.6em;
+      }
+    }
+  }
+
+  #nav-toggle {
+    border-top: 1px solid #bdbfc1;
+    text-decoration: none;
+    color: #333;
+    line-height: 2em;
+    font-size: 1.5em;
+    padding: 0 2%;
+    .fa {
+      float: right;
+      padding: 0.5em 0em;
+    }
+  }
+}
+
+.headSection {
+  .csc-default, .contentElement {
+    margin: 0px;
+  }
+
+  .headerImage {
+    text-align: center;
+    img {
+      display: block;
+      margin: 0px auto;
+    }
+  }
+
+  .innerWrap[data-fullscreen="true"] img {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 500px) {
+  header #header {
+    #pagetitle {
+      display: inline-block;
+    }
+    #logo {
+      max-width: 40%;
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  header #header {
+    #pagetitle {
+      font-size: 1em;
+      text-align: left;
+      width: inherit;
+      max-width: 60%;
+      margin-top: 0px;
+    }
+    #logo {
+      max-width: 25%;
+    }
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  header #header {
+    #pagetitle {
+      font-size: 1.2em;
+      max-width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header #header {
+    padding: 2em 0px;
+  }
+}

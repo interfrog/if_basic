@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{data.header_layout} != 100">
+	<f:if condition="{data.header} || {data.subtitle}">
+		<f:render partial="Header/Header" arguments="{
+			header:data.header,
+			subheader:data.subtitle,
+			layout:data.header_layout,
+			align:data.header_position,
+			link:data.header_link}" />
+		<f:render partial="Header/SubHeader" arguments="{
+			subheader: data.subtitle,
+			align: data.header_position,
+			layout: data.header_layout}" />
+	</f:if>
+</f:if>
+</html>

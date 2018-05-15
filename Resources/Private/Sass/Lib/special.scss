@@ -1,0 +1,88 @@
+.coloredOverlayBox {
+  img {
+    display: block;
+  }
+  p {
+    font-weight: normal !important;
+  }
+  .image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    background-color: $overlayboxbackground;
+    position: absolute;
+    transition: all 400ms ease-out;
+    box-sizing: border-box;
+    padding: 1em;
+    color: $overlayboxtext;
+    a{
+      color: $overlayboxtext;
+    }
+    p {
+      color: $overlayboxtext;
+    }
+    h3{
+      font-size: 1em;
+      color: $overlayboxtext;
+    }
+    a:last-child{
+      margin-top:0px;
+    }
+  }
+  .textBox {
+    margin: 1em 0 0 0;
+    h1, h2, h3, h4, h5 {
+      margin: 0;
+    }
+    h1 a, h2 a, h3 a, h4 a, h5 a {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+  &.leftToRight {
+    .overlay {
+      top: 0px;
+      bottom: 0px;
+      right: 94%;
+      width: 100%;
+    }
+    .image:hover .overlay {
+      right: 0px;
+    }
+  }
+  &.rightToLeft {
+    .overlay {
+      top: 0px;
+      bottom: 0px;
+      left: 94%;
+      width: 100%;
+    }
+    .image:hover .overlay {
+      left: 0px;
+    }
+  }
+  &.topToBottom {
+    .overlay {
+      bottom: 94%;
+      left: 0px;
+      right: 0px;
+      height: 100%;
+    }
+    .image:hover .overlay {
+      bottom: 0px;
+    }
+  }
+  &.bottomToTop {
+    .overlay {
+      top: 94%;
+      left: 0px;
+      right: 0px;
+      height: 100%;
+    }
+    .image:hover .overlay {
+      top: 0px;
+    }
+  }
+}

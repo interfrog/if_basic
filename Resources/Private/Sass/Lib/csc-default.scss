@@ -1,0 +1,21 @@
+.csc-default,.contentElement {
+  position: relative;
+  &.borderedBox {
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    padding: 0.9em 1em 0.75em 1em;
+    border: 1px solid #cfcfcf;
+  }
+
+  @include clearafter();
+}
+
+.csc-frame-rulerBefore {
+  border-top: 5px solid #cfcfcf;
+  padding: 2.5em 0 0 0;
+}
+
+.csc-frame-rulerAfter {
+  border-bottom: 5px solid #cfcfcf;
+  padding: 0 0 2.5em 0;
+}

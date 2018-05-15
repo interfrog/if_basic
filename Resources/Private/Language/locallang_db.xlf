@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-04-23T12:39:08Z" product-name="if_basic">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.maxwidth">
+				<source>Max width of page content (in px)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.pagebg">
+				<source>Backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.pagetitle">
+				<source>Text of first line</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.pagetitlecolor">
+				<source>Color of first line</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.pagetitle2">
+				<source>Text of second line (optional)</source>
+			</trans-unit>   
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.pagetitle2color">
+				<source>Color of second line</source>
+			</trans-unit>                       
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mainmenutype">
+				<source>Type of navigation</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.defaulttext">
+				<source>Default textcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.fontsize">
+				<source>Fontsize (in px)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.logo">
+				<source>as svg-file (recommended)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.logofallback">
+				<source>as jpg/jpeg/png-file</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.logowidth">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.logoheight">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.headerborderbottom">
+				<source>Border Bottom</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.headerborderbottom.true">
+				<source>activate</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.headerbordercolor">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenupid">
+				<source>Folder with Pages</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenutext">
+				<source>Textcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenubackground">
+				<source>Backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenuhinttext">
+				<source>Textcolor of hint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenuhintbackground">
+				<source>Backgroundcolor of hint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.mediamenuborder">
+				<source>Bordercolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.headerbackground">
+				<source>Backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navbarbackground">
+				<source>Color of navigation bar</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navtext">
+				<source>Textcolor of menupoints</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navtexthover">
+				<source>Textcolor of menupoint (mouseover)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navtextactive">
+				<source>Textcolor of active menupoint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navbackground">
+				<source>Hintergrundfarbe der Menüpunkte</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navbackgroundhover">
+				<source>Backgroundcolor of menupoint (mouseover)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.navbackgroundactive">
+				<source>Backgroundcolor of active menupoint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2text">
+				<source>Textcolor of menupoints</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2texthover">
+				<source>Textcolor of menupoint (mouseover)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2textactive">
+				<source>Textcolor of active menupoint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2background">
+				<source>Hintergrundfarbe der Menüpunkte</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2backgroundhover">
+				<source>Backgroundcolor of menupoint (mouseover)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.nav2backgroundactive">
+				<source>Backgroundcolor of active menupoint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasopener">
+				<source>Buttoncolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasbackground">
+				<source>Backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvastext">
+				<source>Color of menupoints</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasactive">
+				<source>Active menupoint</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.offcanvasshadow">
+				<source>Color of shadow</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.footertext">
+				<source>Textcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.footerbackground">
+				<source>Backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.h1">
+				<source>Color of h1</source>
+			</trans-unit>                       
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.h2">
+				<source>Color of h2</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.h3">
+				<source>Color of h3</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.h4">
+				<source>Color of h4</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.h5">
+				<source>Color of h5</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.link">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.formfieldbackground">
+				<source>Backgroundcolor of fields</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.formborder">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.formborderfocus">
+				<source>Color (focused)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.formbutton">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.formbuttonhover">
+				<source>Color (mouseover)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.linkhover">
+				<source>Color if mouseovered</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.buttonbackground">
+				<source>Backgroundcolor for Buttons</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.buttontext">
+				<source>Textcolor for Buttons</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.buttonbackgroundhover">
+				<source>Backgroundcolor for Buttons by hover</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.buttontexthover">
+				<source>Textcolor for Buttons by hover</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.overlayboxtext">
+				<source>Textcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.overlayboxbackground">
+				<source>Backgroundcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.divider">
+				<source>Color of divider</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.accopenerbackground">
+				<source>Background-Color of Opener</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.accopenertext">
+				<source>Text-Color of Opener</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.accopenerhover">
+				<source>Mouseover-Color of Opener</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.accfoldoutbackground">
+				<source>Background-Color of folout container</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.sliderheightdesktop">
+				<source>Height of Sliderelement - Desktop</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.sliderheighttablet">
+				<source>Height of Sliderelement - Tablet</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.sliderheightmobile">
+				<source>Height of Sliderelement - Mobile</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.accfoldouttext">
+				<source>Text-Color of folout container</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.copyrighttheme">
+				<source>Copyright-style</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.copyrightthemebright">
+				<source>Bright</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.copyrightthemedark">
+				<source>Dark</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.pagetitle">
+				<source>Pagetitle</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.headerborder">
+				<source>Header-border</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.navlevel1">
+				<source>Navigation level 1</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.navlevel2">
+				<source>Navigation level 2 (and beyond)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.mediamenu">
+				<source>Icon-Menu</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.offcanvas">
+				<source>Off-Canvas menu</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.generaltext">
+				<source>General text</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.heading1">
+				<source>Main Heading (H1)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.heading2">
+				<source>Chapter Heading (H2)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.heading3">
+				<source>Section Heading (H3)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.heading4">
+				<source>Text-Part Heading (H4)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.heading5">
+				<source>Simple Heading (H5)</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.formborders">
+				<source>Border of fields</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.palette.slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.mediamenu">
+				<source>Icon-Menu</source>
+			</trans-unit>	
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.offcanvas">
+				<source>Off-Canvas-Menu</source>
+			</trans-unit>	
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.headings">
+				<source>Headings</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.form">
+				<source>Forms</source>
+			</trans-unit>	
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.custom">
+				<source>Custom</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.headerborder">
+				<source>Bottom border</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.emptyselect">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.selectfont">
+				<source>Font</source>
+			</trans-unit>
+			<trans-unit id="tx_ifthemeconfiguration_domain_model_themeconfiguration.label.selectcolor">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="pages.div.seo">
+				<source>SEO</source>
+			</trans-unit>
+			<trans-unit id="pages.seotitle">
+				<source>title-tag</source>
+			</trans-unit>
+			<trans-unit id="pages.robots">
+				<source>Robots</source>
+			</trans-unit>
+			<trans-unit id="pages.robots.default">
+				<source>index, follow, noarchive, noodp (Default)</source>
+			</trans-unit>
+			<trans-unit id="pages.robots.nofollow">
+				<source>noindex, nofollow</source>
+			</trans-unit>
+			<trans-unit id="pages.canonical">
+				<source>canonical URL</source>
+			</trans-unit>
+			<trans-unit id="tt_content.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tt_content.hidemobile">
+				<source>Hide on Mobile</source>
+			</trans-unit>
+			<trans-unit id="tt_content.hidemobile.true">
+				<source>Hide</source>
+			</trans-unit>
+			<trans-unit id="tt_content.hidedesktop">
+				<source>Hide on Desktop</source>
+			</trans-unit>
+			<trans-unit id="tt_content.hidedesktop.true">
+				<source>Hide</source>
+			</trans-unit>
+			<trans-unit id="tt_content.fullscreen">
+				<source>Fullscreen-Mode (only in head section)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.fullscreen.true">
+				<source>activate</source>
+			</trans-unit>
+			<trans-unit id="tt_content.url">
+				<source>Video-URL</source>
+			</trans-unit>
+			<trans-unit id="tt_content.sourcetype">
+				<source>source type</source>
+			</trans-unit>
+			<trans-unit id="tt_content.sourcetype.default">
+				<source>Youtube</source>
+			</trans-unit>
+			<trans-unit id="tt_content.sourcetype.vimeo">
+				<source>Vimeo</source>
+			</trans-unit>
+			<trans-unit id="tt_content.sourcetype.iframe">
+				<source>Iframe</source>
+			</trans-unit>
+			<trans-unit id="tt_content.ratio">
+				<source>ratio</source>
+			</trans-unit>
+			<trans-unit id="tt_content.autoplay">
+				<source>Start video on load</source>
+			</trans-unit>
+			<trans-unit id="tt_content.autoplay.true">
+				<source>activate</source>
+			</trans-unit>
+			<trans-unit id="tt_content.showinfo">
+				<source>Show video info if video is not started</source>
+			</trans-unit>
+			<trans-unit id="tt_content.showinfo.true">
+				<source>activate</source>
+			</trans-unit>
+			<trans-unit id="tt_content.showrel">
+				<source>Show new videos after video has ended</source>
+			</trans-unit>
+			<trans-unit id="tt_content.showrel.true">
+				<source>activate</source>
+			</trans-unit>
+			<trans-unit id="tt_content.videoloop">
+				<source>Loop video</source>
+			</trans-unit>
+			<trans-unit id="tt_content.videoloop.true">
+				<source>activate</source>
+			</trans-unit>
+			<trans-unit id="tt_content.palette.videosettings">
+				<source>Video settings</source>
+			</trans-unit>
+			<trans-unit id="tt_content.div.videoframe">
+				<source>video</source>
+			</trans-unit> 
+			<trans-unit id="pages.palette.socialplugins">
+				<source>Social-Plugins</source>
+			</trans-unit>
+			<trans-unit id="pages.fblike">
+				<source>Facebook Like-Button</source>
+			</trans-unit>
+			<trans-unit id="pages.twitter">
+				<source>Tweet this Page</source>
+			</trans-unit>
+			<trans-unit id="pages.googleplus">
+				<source>Google Plus</source>
+			</trans-unit>
+			<trans-unit id="pages.social.recursive">
+				<source>recursive</source>
+			</trans-unit>
+			<trans-unit id="pages.social.enable">
+				<source>enable</source>
+			</trans-unit>
+			<trans-unit id="pages.social.disable">
+				<source>disable</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.div.extconfig">
+				<source>Special</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.labelposition">
+				<source>Labelposition</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.labelposition.default">
+				<source>Default (top)</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.labelposition.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.labelposition.bottom">
+				<source>Bottom</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.labelposition.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.labelposition.hide">
+				<source>Hide</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.allowedmimetypes">
+				<source>Allowed MIME-Types</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.multiple">
+				<source>Allow Multiple Uploads</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.multiple.true">
+				<source>Allow</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.preview">
+				<source>Generate preview after upload</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.preview.true">
+				<source>Activate</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.advancedprogress">
+				<source>Generate advanced progressbar</source>
+			</trans-unit>
+			<trans-unit id="tx_powermail_domain_model_field.advancedprogress.true">
+				<source>Activate</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

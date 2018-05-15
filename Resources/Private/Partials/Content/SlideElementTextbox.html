@@ -1,0 +1,19 @@
+<div class="innerWrap">
+    <div class="textBox">
+        <f:switch expression="{slideElement.header_layout}">
+            <f:case value="2">
+                <h3>{slideElement.header}</h3>
+            </f:case>
+            <f:case value="3">
+                <h4>{slideElement.header}</h4>
+            </f:case>
+            <f:case value="4">
+                <h5>{slideElement.header}</h5>
+            </f:case>
+            <f:case default="TRUE">
+                <h2>{slideElement.header}</h2>
+            </f:case>
+        </f:switch>
+        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{slideElement.bodytext}</f:format.html>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.pageSocials {
+	display: inline-block;
+	width: 100%;
+	margin: 4% 0 0 0;
+	border: 0px;
+
+	.item {
+		float: left;
+		margin: 0px 1em 0px 0px;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.pageSocials .item {
+		margin: 0px 2em 0px 0px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.pageSocials {
+		padding: 4% 0px;
+		border-top: 1px solid $divider;
+		.item {
+			margin: 0px 4em 0px 0px;
+		}
+	}
+}

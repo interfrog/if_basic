@@ -1,0 +1,21 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div id="powermail_fieldwrap_{field.uid}" class="powermail_fieldwrap powermail_fieldwrap_file powermail_fieldwrap_{field.uid} {f:if(condition:'{field.css}',then:'{field.css}',else:'width-100')}" data-labelposition="{f:if(condition:'{field.labelposition}',then:'{field.labelposition}',else:'default')}">
+	<f:switch expression="{field.labelposition}">
+		<f:case value="bottom">
+			<f:render partial="Form/Field/FileInner" arguments="{_all}" />
+			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
+				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+			</label>
+		</f:case>
+		<f:case value="hide">
+			<f:render partial="Form/Field/FileInner" arguments="{_all}" />
+		</f:case>
+		<f:case default="TRUE">
+			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
+				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+			</label>
+			<f:render partial="Form/Field/FileInner" arguments="{_all}" />
+		</f:case>
+	</f:switch>
+</div>

@@ -1,0 +1,19 @@
+@mixin clearafter() {
+	&:after {
+		content: " ";
+		display: block;
+		clear: both;
+		width: 100%;
+		height: 0px;
+		overflow: hidden;
+	}
+}
+
+@function image-url($image){
+  $rebasedPath: $assetPath + $image;
+  @return url($rebasedPath);
+}
+
+@function calcWidth($colCount, $margin){
+  @return (100 - (($colCount - 1) * $margin)) / $colCount
+}

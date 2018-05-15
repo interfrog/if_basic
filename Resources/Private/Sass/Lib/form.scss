@@ -1,0 +1,579 @@
+/**********************/
+/*** FORM STRUCTURE ***/
+/**********************/
+
+form > fieldset {
+	margin: 0.75em 0 1.5em 0;
+	@include breakpoint(600px) {
+		margin: 1.5em -1.5em 3em 0;
+	}
+}
+
+.formfield {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  
+  @include breakpoint(600px) {
+  	float: left;
+  	padding: 0 1.5em 1em 0;
+  }
+
+  label {
+  	display: block;
+  	padding: 0px 0px 0.5em 0px;
+  }
+}
+
+.powermail_fieldwrap.width-25, .powermail_fieldwrap.width-25-clear,
+.width-25, .width-25-clear {
+	@include breakpoint(600px) {
+		width: 25%;
+	}
+}
+.powermail_fieldwrap.width-33, .powermail_fieldwrap.width-33-clear,
+.width-33, .width-33-clear {
+	@include breakpoint(600px) {
+		width: 33.333333%;
+	}
+}
+.powermail_fieldwrap.width-50, .powermail_fieldwrap.width-50-clear,
+.width-50, .width-50-clear {
+	@include breakpoint(600px) {
+		width: 50%;
+	}
+}
+.powermail_fieldwrap.width-66, .powermail_fieldwrap.width-66-clear,
+.width-66, .width-66-clear {
+	@include breakpoint(600px) {
+		width: 66.666666%;
+	}
+}
+.powermail_fieldwrap.width-75, .powermail_fieldwrap.width-75-clear,
+.width-75, .width-75-clear {
+	@include breakpoint(600px) {
+		width: 75%;
+	}
+}
+.powermail_fieldwrap.width-100, .powermail_fieldwrap.width-100-clear
+.width-100, .width-100-clear {
+	@include breakpoint(600px) {
+		width: 100%;
+	}
+}
+
+.width-25-clear,
+.width-33-clear,
+.width-50-clear,
+.width-66-clear,
+.width-75-clear,
+.width-100-clear {
+  clear: left;
+}
+
+.formfield[data-labelposition="left"]{
+  label,.label{
+    float: left;
+    width: 23%;
+  }
+  .field  {
+    float: right;
+    width: 75%;
+  }
+}
+
+.formfield[data-labelposition="right"]{
+  label,.label{
+    float: right;
+    width: 23%;
+  } 
+  .field{
+    float: left;
+    width: 75%;
+  }
+}
+
+
+/*********************/
+/*** FORM STYLINGS ***/
+/*********************/
+label {
+	font-size: 0.875em;
+	color: $defaulttext;
+	cursor: pointer;
+	display: block;
+	font-family: $generalfont;
+	font-weight: normal;
+	line-height: 1.5em;
+	margin-bottom: 0;
+}
+
+.powermail_label{
+	font-size:0.875em;
+	line-height:1.5em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+	appearance: none;
+	border-radius: 0px;
+	background-color: $formfieldbackground;
+	font-family: $generalfont;
+	border: 2px solid $formborder;
+	//box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: $defaulttext;
+	display: block;
+	font-size: 0.875em;
+	padding: 0.5em;
+	height: 2.3125em;
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 0.4s ease-in-out;
+
+	&:focus {
+		border: 2px solid $formborderfocus;
+		outline: 0px;
+	}
+
+	&[disabled="disabled"] {
+		background-color: #FAFAFA;
+		color: #B9B9B9;
+		cursor: default;
+	}
+
+	&#comment {
+		min-height: 15em;
+	}
+}
+	
+input[type="submit"], button[type="submit"]{
+	appearance: none;
+	border: 0;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	background-color: $formbutton;
+	color: #fff;
+	margin-bottom: 1.25em;
+	font-family: $generalfont;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+	&:hover{
+		background-color:$formbuttonhover;
+	}
+	&:focus {
+		border: 1px solid $formborderfocus;
+		outline: 0px;
+	}
+}
+
+
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	.status {
+		float:left;
+		position: relative;
+		width: 1.3em;
+		height: 1.3em;
+		border-radius: 50%;
+		border: 2px solid $formborder;
+		line-height: 1em;
+		margin: 0 0.5em 0.15em 0;
+		text-align:center;
+
+		&:before {
+			@include fontAwesome();
+			color: $formborderfocus;
+			margin: .15em 0 0 0em;
+		}
+	}
+}
+
+input[type="radio"]:checked + label {
+	.status{
+		border: 2px solid $formborder;
+		&:before {
+			content: "\f111";
+		}
+	}
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"]  + label {
+	.status {
+		float: left;
+		position: relative;
+		width: 1.3em;
+		height: 1.3em;
+		border: 2px solid $formborder;
+		line-height: 1em;
+		margin: 0px 0.5em 0.15em 0;
+		text-align: center;
+		&:before {
+			@include fontAwesome();
+			color: $formborderfocus;
+			margin: .15em 0 0 0em;
+		}
+	}
+} 
+
+input[type="checkbox"]:checked + label {
+	.status{
+		border: 2px solid $formborder;
+		&:before {
+			content: "\f00c";
+		}
+	}
+}
+	
+select {
+	border-radius: 0px;
+	background-color: #FAFAFA;
+	border: 1px solid $formborder;
+	padding: 0.5em;
+	font-size: 0.875em;
+	font-family: $generalfont;
+	color: $defaulttext;
+	line-height: normal;
+	border-radius: 0;
+	height: 2.3125em;
+	width: 100%;
+	appearance: none;
+
+	&:focus {
+		border: 1px solid $formborderfocus;
+		outline: 0px;
+	}
+}
+
+textarea {
+	height: auto !important;
+	resize: none;
+}
+	
+fieldset {
+	border: 0px;
+	legend {
+		display: none;
+	}
+	.powermail_radio_legend, .powermail_check_legend {
+		display: inherit;
+	}
+}
+
+.ajaxUploadField {
+	position: relative;
+	.progressArea {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 4;
+
+		&.relative {
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			margin: 0px 0px 0.5em 0px;
+		}
+	}
+	.progressBar {
+		position: relative;
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		height: 5px;
+		z-index: 3;
+		background-color: darken($formborder,10%);
+		visibility: visible;
+		opacity: 1;
+		transition: all 0.2s linear;
+
+		@include clearafter();
+
+		.percent, .fileName {
+			display: none;
+		}
+
+		&[data-uploaded="true"] .progress {
+			background-color: $formborder;
+			border-bottom: 1px solid $formbutton;
+		}
+	}
+
+	.progressArea[data-advanced="1"] {
+		&.relative .progressBar {
+			position: relative;
+		}
+		.progressBar {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			height: 2em;
+			font-size: 0.8em;
+
+			.progress {
+				@include clearafter();
+			}
+
+			.fileName {
+				float: left;
+				display: inherit;
+				padding: 0.5em 0.75em;
+			}
+
+			.percent {
+				float: right;
+				display: inherit;
+				padding: 0.5em 0.75em;
+
+				&:before {
+					content: '(';
+					display: inline;
+				}
+
+				&:after {
+					content: ' %)';
+					display: inline;
+				}
+			}
+		}
+	}
+	.progress {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+	    width: 0%;
+	    z-index: 11;
+	    background-color: $formbutton;
+	    transition: all 1s linear;
+	}
+
+	.previewImage {
+		background-color: $formborder;
+		min-height: 150px;
+		position: relative;
+		margin: 0 0 0.5em 0;
+
+		@include clearafter();
+
+		.image {
+			display: block;
+			height: 0px;
+			padding: 0px 0px 75% 0px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			overflow: hidden;
+			margin: 0px 0px 5px 0px;
+
+			&:nth-last-of-type(1) {
+				margin-bottom: 0px;
+			}
+		}
+
+		.hint {
+			position: absolute;
+			top: 50%;
+			left: 0px;
+			right: 0px;
+			transform: translateY(-50%);
+			color: darken($formborder,20%);
+			text-align: center;
+			padding: 1em 2em;
+			transition: all 0.2s ease-in-out;
+		}
+
+		img {
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			max-height: 300px;
+			display: block;
+			margin: 0px auto;
+		}
+	}
+
+	.ajaxUploadButton {
+		clear: left;
+	}
+
+	.previewImage .loader {
+		margin: 20px auto;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		transform: rotateZ(45deg);
+
+		.cube {
+			float: left;
+			width: 50%;
+			height: 50%;
+			position: relative;
+			transform: scale(1.1); 
+		}
+		
+		.cube:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: darken($formborder,20%);
+			animation: foldCubeAngle 2.4s infinite linear both;
+			transform-origin: 100% 100%;
+		}
+
+		.cube2 {
+			transform: scale(1.1) rotateZ(90deg);
+		}
+		.cube3 {
+			transform: scale(1.1) rotateZ(180deg);
+		}
+		.cube4 {
+			transform: scale(1.1) rotateZ(270deg);
+		}
+		.cube2:before {
+			animation-delay: 0.3s;
+		}
+		.cube3:before {
+			animation-delay: 0.6s; 
+		}
+		.cube4:before {
+			animation-delay: 0.9s;
+		}
+
+		@keyframes foldCubeAngle {
+			0%, 10% {
+				transform: perspective(140px) rotateX(-180deg);
+				opacity: 0; 
+			} 25%, 75% {
+				transform: perspective(140px) rotateX(0deg);
+				opacity: 1; 
+			} 90%, 100% {
+				transform: perspective(140px) rotateY(180deg);
+				opacity: 0; 
+			}
+		}
+	}
+}
+
+.width-50 .ajaxUploadField .previewImage .image,
+.width-66 .ajaxUploadField .previewImage .image,
+.width-75 .ajaxUploadField .previewImage .image,
+.width-100 .ajaxUploadField .previewImage .image {
+	@include breakpoint(600px) {
+		float: left;
+		width: 49%;
+		margin-right: 2%;
+		margin-bottom: 0px;
+		padding: 0px 0px 36.75% 0px;
+
+		&:nth-of-type(2n+2) {
+			margin-right: 0px;
+		}
+
+		&:nth-of-type(2n+3) {
+			clear: left;
+		}
+
+		&:nth-last-of-type(n+3) {
+			margin-bottom: 2%;
+		}
+	}
+}
+
+.width-100 .ajaxUploadField .previewImage .image {
+	
+	@include breakpoint(1000px) {
+		float: left;
+		width: 23.5%;
+		margin-right: 2%;
+		margin-bottom: 0px;
+		padding: 0px 0px 18% 0px;
+
+		&:nth-of-type(4n+2) {
+			margin-right: 2%;
+		}
+		&:nth-of-type(4n+3) {
+			clear: none;
+		}
+
+		&:nth-of-type(4n+4) {
+			margin-right: 0px;
+		}
+
+		&:nth-of-type(4n+5) {
+			clear: left;
+		}
+
+		&:nth-last-of-type(3), &:nth-last-of-type(4) {
+			margin-bottom: 0;
+		}
+
+		&:nth-last-of-type(n+5) {
+			margin-bottom: 2%;
+		}
+	}
+}
+
+.code_message {
+	list-style-type: none;
+	margin: 1.5em 0px;
+	padding: 0px;
+
+	li {
+		list-style-type: none;
+
+		h4 {
+			font-size: 1em;
+			font-weight: bold;
+			margin: 0px 0px 0px 0px;
+		}
+
+		&.alert {
+			border: 1px solid #a00404;
+			color: #a00404;
+			padding: 0.75em 1em 0.6em 1em;
+			background-color: #eecdcd;
+			display: inline-block;
+
+			h4 {
+				&:before {
+				    display: inline-block;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					content: "\f071";
+					background-color: transparent;
+					color: #a00404;
+					margin: 0px 0.5em 0px 0px;
+				}
+				color: #a00404;
+			}
+		}
+	}
+}

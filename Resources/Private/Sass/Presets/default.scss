@@ -1,0 +1,103 @@
+/*** Global Variables ***/
+$absoluteExtPath: '/typo3conf/ext/if_basic/';
+
+
+/*** FONT IMPORT ***/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,500italic,700,700italic,900,900italic,400italic,500);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+
+/*** FONT Variables ***/
+$pagetitlefont: 'Roboto', sans-serif;
+$pagetitle2font: 'Roboto', sans-serif;
+$generalfont: 'Roboto', sans-serif;
+$h1font: 'Roboto', sans-serif;
+$h2font: 'Roboto', sans-serif;
+$h3font: 'Oswald', sans-serif;
+$h4font: inherit;
+$h5font: inherit;
+
+
+/*** Static Variables ***/
+$maxwidth: 1200;
+$mediamenupid: 3;
+$pagetitlestyle: normal;
+$pagetitleweight: 400;
+$pagetitle2style: normal;
+$pagetitle2weight: 400;
+$fontsize: 14px;
+$fontweight: 300;
+$logo: '1';
+$logowidth: 245;
+$logoheight: 55;
+$headerborderbottom: 0px solid;
+$h1style: normal;
+$h1weight: 500;
+$h2style: normal;
+$h2weight: 500;
+$h3style: normal;
+$h3weight: 400;
+$h4style: normal;
+$h4weight: 400;
+$h5style: normal;
+$h5weight: 400;
+$sliderheightdesktop: 500;
+$sliderheighttablet: 400;
+$sliderheightmobile: 200;
+
+
+/*** COLOR Variables ***/
+$pagebg: rgba(255,255,255,1);
+$pagetitlecolor: rgba(177,179,180,1);
+$pagetitle2color: rgba(62,61,64,1);
+$defaulttext: rgba(3,3,3,1);
+$headerbordercolor: rgba(151,191,13,1);
+$mediamenutext: rgba(120,150,10,1);
+$mediamenubackground: rgba(236,237,237,1);
+$mediamenuborder: rgba(236,237,237,1);
+$mediamenuhinttext: rgba(255,255,255,1);
+$mediamenuhintbackground: rgba(151,191,13,1);
+$headerbackground: rgba(255,255,255,1);
+$navbarbackground: rgba(151,191,13,1);
+$navtext: rgba(255,255,255,1);
+$navtexthover: rgba(151,191,13,1);
+$navtextactive: rgba(88,88,90,1);
+$navbackground: rgba(151,191,13,1);
+$navbackgroundhover: rgba(255,255,255,1);
+$navbackgroundactive: rgba(255,255,255,1);
+$nav2text: rgba(255,255,255,1);
+$nav2texthover: rgba(88,88,90,1);
+$nav2textactive: rgba(88,88,90,1);
+$nav2background: rgba(151,191,13,1);
+$nav2backgroundhover: rgba(255,255,255,1);
+$nav2backgroundactive: rgba(255,255,255,1);
+$offcanvasopener: rgba(151,191,13,1);
+$offcanvasbackground: rgba(151,191,13,1);
+$offcanvastext: rgba(3,3,3,1);
+$offcanvasactive: rgba(255,255,255,1);
+$footertext: rgba(255,255,255,1);
+$footerbackground: rgba(88,88,90,1);
+$h1: rgba(151,191,13,1);
+$h2: rgba(151,191,13,1);
+$h3: rgba(62,61,64,1);
+$h4: rgba(62,61,64,1);
+$h5: rgba(62,61,64,1);
+$formfieldbackground: rgba(255,255,255,1);
+$formborder: rgba(236,237,237,1);
+$formborderfocus: rgba(151,191,13,1);
+$formbutton: rgba(151,191,13,1);
+$formbuttonhover: rgba(236,237,237,1);
+$link: rgba(151,191,13,1);
+$linkhover: rgba(3,3,3,1);
+$buttonbackground: rgba(151,191,13,1);
+$buttontext: rgba(255,255,255,1);
+$buttonbackgroundhover: rgba(62,61,64,1);
+$buttontexthover: rgba(255,255,255,1);
+$overlayboxtext: rgba(255,255,255,1);
+$overlayboxbackground: rgba(151,191,13,1);
+$divider: rgba(151,191,13,1);
+$accopenerbackground: rgba(151,191,13,1);
+$accopenertext: rgba(255,255,255,1);
+$accopenerhover: rgba(123,124,126,1);
+$accfoldoutbackground: rgba(236,237,237,1);
+$accfoldouttext: rgba(62,61,64,1);

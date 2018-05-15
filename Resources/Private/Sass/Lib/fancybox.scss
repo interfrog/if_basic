@@ -1,0 +1,77 @@
+.fancybox-close {
+  background: none;
+  top: -1em;
+  right: -2em;
+  width: 1em;
+  height: 1em;
+  &:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.538461538em;
+    font-style: normal;
+    color: #fff;
+    display: inline-block;
+  }
+}
+
+.fancybox-skin {
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+.fancybox-next, .fancybox-prev {
+  background: none;
+  color: #fff;
+  vertical-align: middle;
+  top: 50%;
+  height: 4em;
+  line-height: 4em;
+}
+
+.fancybox-next span, .fancybox-prev span {
+  display: none;
+}
+
+.fancybox-next:before, .fancybox-prev:before {
+  font-family: Flaticon;
+  font-size: 1.538461538em;
+  font-style: normal;
+  display: none;
+}
+
+.fancybox-next:hover:before {
+  display: inline-block;
+}
+
+.fancybox-prev {
+  &:hover:before {
+    display: inline-block;
+  }
+  margin: -2em 0px 0px -2em;
+  text-align: left;
+  &:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 3em;
+    content: "\f104";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.fancybox-next {
+  text-align: right;
+  margin: -2em -2em 0px 0px;
+  &:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 3em;
+    content: "\f105";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

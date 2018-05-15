@@ -1,0 +1,211 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$CorporateGreen: rgb(107,188,0);
+$CorporateGrey: rgb(63,72,71);
+
+$StandardLightGrey: rgb(237,237,237);
+
+body#typo3-index-php {
+	background: $StandardLightGrey;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 1.1428571429em;
+	line-height: 1em;
+	color: $CorporateGrey;
+}
+
+h2 {
+	font-size: 1.5625em;
+	line-height: 1.25em;
+	font-weight: 400;
+	margin: 0px 0px 1em 0px;
+}
+
+h3 {
+	font-weight: 600;
+	line-height: 1.25em;
+}
+
+p {
+	line-height: 1.25em;
+	margin: 0px 0px 1em 0px;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+/* General Box Styles with Background */
+
+.row {
+	display: block;
+	position: relative;
+	clear: both;
+	width: 100%;
+	text-align: center;
+
+	.standardGrey {
+		p, h1, h2, h3, h4, h5, h6 {
+			color: white;
+		}
+
+		a {
+			color: $CorporateGreen;
+			font-weight: 900;
+
+			&:hover {
+				color: $CorporateGreen;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.noBg {
+
+		h1, h2, h3, h4, h5 {
+			color: white;
+		}
+
+		p {
+			color: white;
+		}
+	}
+}
+
+.innerWrap {
+	display: block;
+	position: relative;
+	margin: 0px auto;
+	width: 86.979166667%;
+	max-width: 680px;
+	text-align: left;
+}
+
+
+
+#pageFooter {
+	.innerWrap {
+		max-width: 954px;
+	}
+}
+
+.clearer {
+	display: block;
+	clear: both;
+}
+
+.standardGrey {
+	background-color: $CorporateGrey;
+}
+
+.lightGrey {
+	background-color: $StandardLightGrey;
+}
+
+.noBg {
+	background-color: none;
+	background: transparent;
+}
+
+.csc-default,
+.contentElement {
+	margin: 2em 0px 0px 0px;
+	display: inline-block;
+	width: 97.9591837%;
+	text-align: left;
+}
+
+.regularColSet {
+	.col {
+		float: left;
+	}
+
+	&.twoColSet {
+		.col {
+			width: 48%;
+			margin: 0px 2% 0% 0%;
+
+			&:nth-of-type(2n) {
+				margin-right: 0px;
+				margin-left: 2%;
+			}
+		}
+
+		.csc-default, .contentElement {
+			margin: 0px 0px 0px 0px;
+			display: block;
+			width: auto;
+		}
+	}
+}
+
+
+#pageHeader {
+	padding-top: 150px;
+	.logo {
+		float: left;
+		margin: 20px 0px;
+
+		img {
+			height: 35px;
+		}
+	}
+}
+
+.ifLink {
+	display: inline-block;
+	width: 100%;
+	padding: 5px 0px 8px 0px;
+
+	.ifLogo {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+#typo3-index-php {
+
+	.shadow {
+		box-shadow: none !important;
+	}
+
+	.t3-login-logo {
+		margin-bottom: 0px;
+	}
+
+	.t3-login-field input.t3-login-submit {
+		border: 0px;
+		background: $CorporateGrey;;
+		float: inherit;
+	}
+
+	.t3-login-box-body {
+		background-image: none;
+		background: transparent;
+		padding: 0px;
+	}
+
+	.t3-login-field input {
+		display: block;
+		width: 90%;
+		margin: 0px 0px 1.5em 0px;
+	}
+
+	input {
+		border-radius: 0px;
+	}
+
+	div#t3-copyright-notice {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+}

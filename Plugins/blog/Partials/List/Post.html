@@ -1,0 +1,27 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+<div class="article" itemscope="itemscope" itemtype="http://schema.org/Article">
+  <div class="caldate">
+    <span class="month">{f:format.date(date:post.crdate, format:'%b')}</span>
+    <span class="day">{f:format.date(date:post.crdate, format:'%d')}</span>
+    <span class="year">{f:format.date(date:post.crdate, format:'%Y')}</span>
+  </div>
+  <div class="textbox">
+    <h3>
+      <f:link.page pageUid="{post.uid}" title="{post.title}">
+        <span itemprop="headline">{post.title}</span>
+      </f:link.page>
+    </h3>
+    <p>
+      <f:render partial="Post/Meta" arguments="{_all}" />
+    </p>
+
+    <f:if condition="{post.abstract}">
+        <f:then>
+            <p itemprop="description">{post.abstract}</p>
+        </f:then>
+        <f:else>
+            <p itemprop="description">{post.description}</p>
+        </f:else>
+    </f:if>
+  </div>
+</div>

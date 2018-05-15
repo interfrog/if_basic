@@ -1,0 +1,245 @@
+html.stickyfooter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  body, #siteWrapper, #siteCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+html,body {
+  background-color: $pagebg;
+}
+
+body {
+  font-size: $fontsize;
+  color: $defaulttext;
+  font-family: $generalfont;
+  font-weight: $fontweight;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  @include clearafter();
+}
+
+hr {
+  display: inline-block;
+  width: 100%;
+  margin: 1em 0;
+  border: 0px;
+  border-top: 1px solid $divider;
+}
+
+@media only screen and (min-width: 600px) {
+  hr {
+    margin: 2em 0px;
+  }
+}
+
+.divider {
+  display: block;
+  clear: both;
+
+  hr {
+    display: block;
+    margin: 0;
+  }
+}
+
+#maincontent > .csc-default, #maincontent > .contentElement {
+  clear: both;
+}
+
+img, object, embed, iframe {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+figure {
+  img {
+    max-width: 100%;
+  }
+  padding: 0;
+  margin: 0;
+}
+
+.innerWrap {
+  margin: 0 auto;
+  width:90%;
+  max-width: #{$maxwidth}px;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.row {
+  .innerWrap > .csc-default, .innerWrap > .contentElement {
+    transition: all 0.75s ease-in-out;
+  }
+
+  &[data-fullscreen="true"] > .innerWrap {
+    max-width: inherit;
+    width: inherit;
+  }
+  
+  &[data-inview="false"] .innerWrap > .csc-default,
+  &[data-inview="false"] .innerWrap > .contentElement {
+    margin-top: 5em !important;
+    opacity: 0;
+  }
+
+  &[data-inview="true"] .innerWrap > .csc-default,
+  &[data-inview="true"] .innerWrap > .contentElement, {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  &[data-colorsheme] {
+    padding: 4em 0;
+  }
+}
+
+#page {
+  > .row {
+    &.regularPadding {
+      padding: 4em 0px;
+
+      &:not([data-colorsheme]) + .regularPadding:not([data-colorsheme]) {
+        padding-top: 0px;
+      }
+    }
+
+    &.topPadding {
+      padding: 4em 0px 0px 0px;
+    }
+
+    &.bottomPadding {
+      padding: 0px 0px 0px 4em;
+    }
+
+    &.regularPadding,&.topPadding,&.bottomPadding,&.noPadding {
+      .innerWrap .csc-default:nth-last-of-type(1) {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  .row {
+    .innerWrap > .csc-default,
+    .innerWrap > .contentElement {
+      margin: 0px 0px 2em 0px;
+
+      &[data-type="div"] {
+        margin: 0px;
+      }
+    }
+
+    &:nth-last-of-type(1) .innerWrap > .csc-default,
+    &:nth-last-of-type(1) .innerWrap > .contentElement {
+      margin: 0px 0px 0px 0px;
+    }
+    &:nth-last-of-type(1) {
+      &:not([data-colorsheme]) {
+        /*margin: 0px 0px 4em 0px;*/
+      }
+      &.socialWrap,&[data-fullscreen="true"] {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+}
+
+.row {
+  > * {
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+#page {
+  display: block;
+  clear: both;
+}
+
+%stickyfooter {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+body.stickyfooter {
+  @extend %stickyfooter;
+
+  #siteWrapper, #siteCanvas {
+    @extend %stickyfooter;
+  }
+
+  #pagefooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 2%;
+    padding-left: 2%;
+    box-sizing: border-box;
+  }
+  .col_3 {
+    width: 50%;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .hideOnDesktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hideOnMobile {
+    display: none;
+  }
+}

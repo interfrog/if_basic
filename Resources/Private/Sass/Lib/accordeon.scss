@@ -1,0 +1,72 @@
+.accordeonWrapper {
+  .opener {
+    cursor: pointer;
+    .status {
+      float: right;
+      font-size: 1.5em;
+
+      .fa {
+        line-height: 0.75em;
+      }
+    }
+
+    &[data-status="open"] {
+      .fa-angle-down {
+        display: none;
+      }
+      .fa-angle-up {
+        display: inherit;
+      }
+    }
+    &[data-status="close"] {
+      .fa-angle-down {
+        display: inherit;
+      }
+      .fa-angle-up {
+        display: none;
+      }
+    }
+  }
+
+  &.normal {
+    .item {
+      display: inline-block;
+      margin: 0px 0px 1em 0px;
+      width: 100%;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &.flat {
+    .opener {
+      background-color: $accopenerbackground;
+      color: $accopenertext;
+      padding: 0.5em 0.75em;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        background-color: $accopenerhover;
+      }
+
+      .status {
+        color: $accopenertext;
+        > .fa {
+          color: $accopenertext;
+        }
+      }
+    }
+    .foldout {
+      background-color: $accfoldoutbackground;
+      color: $accfoldouttext;
+      padding: 0.5em 1.125em;
+      margin: 0px 0px 0.375em 0px;
+
+      p,a,li,span,h1,h2,h3,h4,h5 {
+        color: $accfoldouttext;
+      }
+    }
+  }
+}

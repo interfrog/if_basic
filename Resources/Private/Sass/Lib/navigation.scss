@@ -1,0 +1,376 @@
+header {
+  #mediaMenu {
+    display: block;
+    width: 100%;
+    background-color: $mediamenubackground;
+    border-bottom: 0.07142857143em solid $mediamenuborder;
+    ul {
+      margin: 0;
+      padding: 0;
+      float: right;
+      list-style: none;
+      li {
+        float: left;
+        position: relative;
+        border-left: 0.07142857143em solid $mediamenuborder;
+        a {
+          position: relative;
+          text-align: center;
+          vertical-align: middle;
+          display: block;
+          font-size: 1em;
+          text-decoration: none;
+          line-height: 2em;
+          color: $mediamenutext;
+          .fa {
+            color: $mediamenutext;            
+          }
+          &.icon {
+            font-size: 1.5em;
+            width: 1.5em;
+            line-height: 1.5em;
+          }
+          &.noIcon {
+            line-height: 2.25em;
+            padding: 0 0.375em;
+          }
+        }
+        &:hover .hint {
+          display: block;
+        }
+      }
+    }
+    .hint {
+      display: none;
+      position: absolute;
+      color: $mediamenuhinttext;
+      background: $mediamenuhintbackground;
+      z-index: 999;
+      font-size: 0.6em;
+      line-height: 2em;
+      padding: 0 0.75em;
+      font-weight: 500;
+      margin-top: 0.33333em;
+      left: 50%;
+      margin-left: -50%;
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 0.6em solid transparent;
+        border-right: 0.6em solid transparent;
+        border-bottom: 0.6em solid $mediamenuhintbackground;
+        position: absolute;
+        z-index: 999;
+        top: -0.6em;
+        left: 50%;
+        margin-left: -0.6em;
+        span {
+          width: auto;
+          font-size: 0.7em;
+          color: #000;
+        }
+      }
+    }
+  }
+  nav{
+    display: none;
+    width: 100%;
+    text-align: left;
+    background-color:$navbarbackground;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        float: left;
+        position: relative;
+        a {
+          font-size: 1.071428571em;
+          font-weight: 500;
+          text-decoration: none;
+          background-color: $navbackground;
+          display: block;
+          box-sizing: border-box;
+          color: $navtext;
+          line-height: 1.5em;
+          padding: 0.75em 1em;
+          &:hover {
+            color:$navtexthover;
+            background-color:$navbackgroundhover;
+          }
+        }
+        &.active a {
+          color:$navtextactive;
+          background-color:$navbackgroundactive;
+        }
+        .Level2 {
+          position: absolute;
+          display: none;
+          text-align: left;
+          padding-top: 0.3571428571em;
+          z-index: 9;
+          min-width: 100%;
+          li {
+            width: auto;
+            float: none;
+            border-top: 0.07142857143em solid #e8ecef;
+            background-color: $nav2background;
+            a {
+              background-color: $nav2background;
+              color: $nav2text;
+              white-space: nowrap;
+              padding-top: 0.6em;
+              padding-bottom: 0.6em;
+              &:hover {
+                color: $nav2texthover;
+                background-color:$nav2backgroundhover;
+              }
+            }
+            &.active > a{
+              color:$nav2textactive;
+              background-color:$nav2backgroundactive;
+            }
+          }
+          > li:first-child {
+            border-top: 0px;
+          }
+        }
+        .Level3 a {
+          padding-left: 1.5em;
+        }
+        &.active, &:hover ul.submenu {
+          display: block;
+        }
+      }
+    }
+    &.type1{
+        .Level1 li {
+          > a {
+            position: relative;
+          }
+          > a:hover:before,&.active > a:before{
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: .45em solid transparent;
+            border-right: .45em solid transparent;
+            border-top: .45em solid $headerbackground;
+            position: absolute;
+            z-index: 999;
+            top: 0px;
+            left: 50%;
+            margin-left: -.45em;             
+          }
+        }
+        .Level2 > li,.Level3 > li{
+          > a {
+            position:relative;
+          }
+          > a:hover:before,&.active > a:before{
+            content: '';
+            width: 0;   
+            height: 0;
+            border-top: .45em solid transparent;
+            border-bottom: .45em solid transparent;
+            border-left: .45em solid $headerbackground;
+            position: absolute;
+            z-index: 999;
+            top: 50%;
+            left: 0.45em;
+            margin-top: -.45em;              
+          }
+        }
+    }
+    &.alwaysmobile{
+			height: 100%;
+			display: none;
+			position: initial;
+			background-color: transparent;
+			overflow: hidden;
+			&.active {
+				display: block;
+			}
+			.col_12 {
+				padding: 0;
+			}
+			ul {
+				height: 100%;
+				li {
+					background-color: transparent;
+					float: none;
+					position: initial;
+					left: 0;
+					
+					a {
+						background-color: transparent;
+						color: $defaulttext;
+					}
+
+					&.dropdown {
+						a:after {
+							display: inline-block;
+							font-family: FontAwesome;
+							font-size: 2em;
+							content: "\f105";
+							float: right;
+							vertical-align: middle;
+							color: $defaulttext;
+						}
+							
+						> ul {
+							transition-duration: 1s;
+							display: block;
+							top: 173px;
+							position: absolute;
+							height: 100%;
+							overflow: visible;
+							z-index: 999;
+							width: 100%;
+							left: 100vw;
+						}
+
+						&.active,&.activeelem {
+							> a {
+								transition-duration: 1s;
+								position: absolute;
+								top: 119px;
+								width: 100%;
+							}
+							> ul {
+								transition-duration: 1s;
+								display: block;
+								top: 173px;
+								position: absolute;
+								height: 100%;
+								overflow: visible;
+								z-index: 999;
+								width: 100%;
+							}
+
+							> a:after {
+								content: "\f104";
+								color: $offcanvasactive;
+							}
+						}
+					}
+							
+					&:hover {
+						a:after {
+							color: $offcanvasactive;
+						}
+					}
+					
+					ul.Level2 {
+						li {
+							a:after {
+								content: "";
+							}
+							&.dropdown a:after {
+								content: "\f105";
+							}
+						}
+					}
+					ul.Level3 {
+						height: auto !important;
+						li {
+							margin-left: 0 !important;
+							a:after {
+								content: "";
+							}
+						}
+					}
+				}
+			}        
+    }
+  }
+}
+
+.breadcrumb {
+  margin: 0 0 4% 0;
+  ul {
+    margin: 1em 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 0 0.5em 0 0;
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      &.current {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: #{$maxwidth}px) {
+  header nav {
+    display: block;
+  }
+}
+							
+@-webkit-keyframes fromLeft {
+    0%   { left: 0; }
+    100% { left: -100%; display: none; }
+}
+@-moz-keyframes fromLeft {
+    0%   { left: 0; }
+    100% { left: -100%; display: none;  }
+}
+@-ms-keyframes fromLeft {
+    0%   { left: 0; }
+    100% { left: -100%; display: none;  }
+}
+@-o-keyframes fromLeft {
+    0%   { left: 0; }
+    100% { left: -100%; display: none;  }
+}
+
+
+@-webkit-keyframes fromRight {
+    0%   { left: 100%; display: none; }
+    100% { left: 0;  display: block; }
+}
+@-moz-keyframes fromRight {
+    0%   { left: 100%; display: none; }
+    100% { left: 0;  display: block; }
+}
+@-ms-keyframes fromRight {
+    0%   { left: 100%; display: none; }
+    100% { left: 0;  display: block; }
+}
+@-o-keyframes fromRight {
+    0%   { left: 100%; display: none;}
+    100% { left: 0;  display: block;}
+}
+
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}

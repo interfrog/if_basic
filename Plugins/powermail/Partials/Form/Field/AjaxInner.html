@@ -1,0 +1,33 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+<div class="powermail_fieldwrap_file_inner ajaxUploadField">
+	<div class="progressArea {f:if(condition:'{field.preview}',else:'relative')}" data-advanced="{field.advancedprogress}">
+	</div>
+	<f:if condition="{field.preview}">
+		<div class="previewImage">
+			<span class="hint"><f:translate key="LLL:EXT:if_basic/Resources/Private/Language/locallang.xlf:ajaxFileUpload.maxFileSize"/>: <f:format.bytes decimals="1" decimalSeparator=",">{settings.ajaxUpload.allowedFileSize}</f:format.bytes><br>
+			<f:translate key="LLL:EXT:if_basic/Resources/Private/Language/locallang.xlf:ajaxFileUpload.allowedFileExt"/>: {settings.ajaxUpload.allowedFileExt}</span>
+			<f:if condition="{field.placeholder}">
+				<f:then>
+					<div class="image" style="background-image: url({f:uri.image(src:'{field.placeholder}',maxWidth:500)})">
+						
+					</div>
+					
+				</f:then>
+				<f:else>
+					<div class="image">
+						
+					</div>
+				</f:else>
+			</f:if>
+		</div>
+	</f:if>
+    <input
+    	type="file"
+    	class="ajaxFileUpload"
+    	data-target="powermail_field_{field.marker}"
+    	style="display: none;"
+    	{f:if(condition:'{field.multiple}',then:'multiple')}
+    	accept="{f:if(condition:'{field.allowedmimetypes}',then:'{field.allowedmimetypes}',else:'{settings.ajaxUpload.allowedMimeTypes}')}">
+    <input type="hidden" id="powermail_field_{field.marker}" name="tx_powermail_pi1[field][{field.marker}]"  />
+    <a href="#" class="ajaxUploadButton flat-button"><i class="fa fa-upload" aria-hidden="true"></i> Hochladen</a>
+</div>

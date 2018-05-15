@@ -1,0 +1,103 @@
+<f:layout name="Page" />
+<f:section name="pageheader">
+	<header id="headerid">
+		<div id="mediaMenu" class="row">
+			<div class="innerWrap">
+				<f:format.raw>
+					{mediaMenu}
+				</f:format.raw>
+		  	</div>
+		</div>
+		<div id="header" class="row">
+			<div class="innerWrap">
+				<div id="logo">
+					<f:format.raw>{logo}</f:format.raw>
+				</div>
+                <f:if condition="{mainmenutype}=='alwaysmobile'">
+                    <f:else>
+                         <a  href="#" class="mobileMenuTrigger offCanvasOpener" data-action="open">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </f:else>
+                </f:if>
+                <div id="pagetitle">
+                    <f:format.raw>{pagetitle}</f:format.raw>
+                </div>
+			</div>
+		</div>
+        <nav class="mainmenu {mainmenutype} row">
+            <div class="innerWrap">
+                <f:format.raw>
+                    {mainMenu}
+                </f:format.raw>
+            </div>
+        </nav>
+	</header>
+    <f:if condition="{mainmenutype}=='alwaysmobile'">
+        <f:then>
+            <div class="permanentOffCanvas">
+                <a  href="#" class="permanentOffCanvasTrigger" data-action="open"></a>  
+                <f:format.raw>
+                    {offCanvas}
+                </f:format.raw>            
+            </div>
+        </f:then>
+        <f:else>
+            <div class="offCanvasMenu">                  
+                <a href="#" class="mobileMenuTrigger offCanvasCloser" data-action="close"><i class="fa fa-close"></i></a>
+                <f:format.raw>
+                        {offCanvas}
+                </f:format.raw>
+            </div>                
+        </f:else>
+    </f:if>
+</f:section>
+
+<f:section name="pagecontent">
+	<section id="page">
+        <f:switch expression="{backendLayout}">
+            <f:case value="2-Col-Header">
+                <f:render partial="Headsection" arguments="{_all}" />
+                <f:render partial="TwoColContent" arguments="{_all}" />
+            </f:case>
+            <f:case value="2-Col">
+                <f:render partial="TwoColContent" arguments="{_all}" />
+            </f:case>
+            <f:case value="1-Col-Header">
+                <f:render partial="Headsection" arguments="{_all}" />
+                <f:render partial="RegularContent" arguments="{_all}" />
+            </f:case>
+            <f:case default="TRUE">
+                <f:render partial="RegularContent" arguments="{_all}" />
+            </f:case>
+        </f:switch>
+        <f:comment>
+            <f:render partial="Socials" arguments="{_all}" />
+        </f:comment>
+    </section>
+</f:section>
+
+<f:section name="pagefooter">
+	<footer id="pagefooter">
+		<div class="row">
+			<div class="innerWrap">
+				<f:format.raw>
+					{footerContent}
+				</f:format.raw>
+			</div>
+		</div>
+		<div class="row" id="copyrightRow" data-theme="{copyrighttheme}">
+			<div class="innerWrap">
+				<p class="copyright">&copy; {year} Interfrog Distribution Package</p>
+				<f:switch expression="{copyrighttheme}">
+					<f:case value="bright">
+						<p class="typo3">empowered by <a href="http://www.typo3.org"><img src="{absoluteImagePath}/typo3_grey.svg" onerror="this.onerror=null; this.src='{absoluteImagePath}/typo3_grey.png'"></img></a></p>
+					</f:case>
+					<f:case value="dark">
+						<p class="typo3">empowered by <a href="http://www.typo3.org"><img src="{absoluteImagePath}/typo3.svg" onerror="this.onerror=null; this.src='{absoluteImagePath}/typo3.png'"></img></a></p>
+					</f:case>
+				</f:switch>
+			</div>
+		</div>
+	</footer>
+</f:section>
