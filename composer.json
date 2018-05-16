@@ -6,9 +6,11 @@
     "keywords": [
         "TYPO3",
         "extension",
-        "if_basic"
+        "ifPage",
+        "Theme",
+        "Basic"
     ],
-    "homepage": "http://interfrog.de",
+    "homepage": "https://www.ifpage.de",
     "authors": [{
         "name": "Interfrog Produktion GmbH",
         "role": "Developer",
@@ -18,7 +20,7 @@
         "GPL-2.0+"
     ],
     "require": {
-        "typo3/cms-core": "7.6.*"
+        "typo3/cms-core": "8.*"
     },
     "config": {
         "vendor-dir": ".Build/vendor",
