@@ -6,7 +6,7 @@ The following extensions are configured in the sitepackage
 
 - fluid_styled_content (8.7.0.-8.99.99)
 - rte_ckeditor (8.7.0.-8.99.99)
-- if_themeconfiguration (5.0.0-5.99.99)
+- if_themeconfiguration (2.0.0-2.99.99)
 - news (5.3.0-5.99.99)
 - gridelements (8.0.0-8.99.99)
 - powermail (3.8.0-3.21.99)
