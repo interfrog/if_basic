@@ -9,7 +9,9 @@ editor:
   config:
     contentsCss: "EXT:if_basic/Resources/Public/Styles/rte.css"
     stylesSet:
-      - { name: "Quatratischer Link", element: "a", attributes: { class: "squareLink"} }
+      - { name: "Gerahmter Button", element: "a", attributes: { class: "boxed-button"} }
+      - { name: "Gefüllter Button", element: "a", attributes: { class: "flat-button"} }
+      - { name: "Breiter Button", element: "a", attributes: { class: "fullwidth-button"} }
     format_tags: "p;h2;h3;h4;h5"
     toolbarGroups:
       - { name: styles, groups: [ styles, format ] }
