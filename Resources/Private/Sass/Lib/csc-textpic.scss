@@ -48,7 +48,14 @@
     &[data-csc-cols="5"],
     &[data-csc-cols="6"],
     &[data-csc-cols="7"],
-    &[data-csc-cols="8"] {
+    &[data-csc-cols="8"],
+    &[data-ce-columns="2"],
+    &[data-ce-columns="3"],
+    &[data-ce-columns="4"],
+    &[data-ce-columns="5"],
+    &[data-ce-columns="6"],
+    &[data-ce-columns="7"],
+    &[data-ce-columns="8"] {
       .csc-textpic-imagerow .csc-textpic-imagecolumn,
       .ce-row .ce-column {
         width: 48%;
@@ -63,7 +70,9 @@
 
   @include breakpoint(800px) {
     &[data-csc-cols="2"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="2"] .ce-row .ce-column {
+    &[data-csc-cols="2"] .ce-row .ce-column,
+    &[data-ce-columns="2"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="2"] .ce-row .ce-column  {
       width: 48%;
       margin: 0px 4% 0px 0px;
       float: left;
@@ -72,7 +81,9 @@
       }
     }
     &[data-csc-cols="3"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="3"] .ce-row .ce-column  {
+    &[data-csc-cols="3"] .ce-row .ce-column,
+    &[data-ce-columns="3"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="3"] .ce-row .ce-column  {
       width: 32%;
       margin: 0px 2% 0px 0px;
       float: left;
@@ -81,7 +92,9 @@
       }
     }
     &[data-csc-cols="4"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="4"] .ce-row .ce-column  {
+    &[data-csc-cols="4"] .ce-row .ce-column,
+    &[data-ce-columns="4"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="4"] .ce-row .ce-column  {
       width: 23.5%;
       margin: 0px 2% 0px 0px;
       float: left;
@@ -90,7 +103,9 @@
       }
     }
     &[data-csc-cols="5"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="5"] .ce-row .ce-column  {
+    &[data-csc-cols="5"] .ce-row .ce-column,
+    &[data-ce-columns="5"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="5"] .ce-row .ce-column  {
       width: 19.2%;
       margin: 0px 1% 0px 0px;
       float: left;
@@ -99,7 +114,9 @@
       }
     }
     &[data-csc-cols="6"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="6"] .ce-row .ce-column  {
+    &[data-csc-cols="6"] .ce-row .ce-column,
+    &[data-ce-columns="6"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="6"] .ce-row .ce-column  {
       width: 15.833333333%;
       margin: 0px 1% 0px 0px;
       float: left;
@@ -108,7 +125,9 @@
       }
     }
     &[data-csc-cols="7"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="7"] .ce-row .ce-column  {
+    &[data-csc-cols="7"] .ce-row .ce-column,
+    &[data-ce-columns="7"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="7"] .ce-row .ce-column  {
       width: 13.428571429%;
       margin: 0px 1% 0px 0px;
       float: left;
@@ -117,7 +136,9 @@
       }
     }
     &[data-csc-cols="8"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
-    &[data-csc-cols="8"] .ce-row .ce-column  {
+    &[data-csc-cols="8"] .ce-row .ce-column,
+    &[data-ce-columns="8"] .csc-textpic-imagerow .csc-textpic-imagecolumn,
+    &[data-ce-columns="8"] .ce-row .ce-column  {
       width: 11.625%;
       margin: 0px 1% 0px 0px;
       float: left;
