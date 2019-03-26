@@ -329,7 +329,7 @@
 				<source>Hide</source>
 			</trans-unit>
 			<trans-unit id="tt_content.fullscreen">
-				<source>Fullscreen-Mode (only in head section)</source>
+				<source>Fullscreen-Mode</source>
 			</trans-unit>
 			<trans-unit id="tt_content.fullscreen.true">
 				<source>activate</source>

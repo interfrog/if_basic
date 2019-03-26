@@ -436,8 +436,8 @@
 				<target>Verbergen</target>
 			</trans-unit>
 			<trans-unit id="tt_content.fullscreen">
-				<source>Fullscreen-Mode (only in head section)</source>
-				<target>Fullscreen-Modus (nur im Kopfbereich)</target>
+				<source>Fullscreen-Mode</source>
+				<target>Fullscreen-Modus</target>
 			</trans-unit>
 			<trans-unit id="tt_content.fullscreen.true">
 				<source>activate</source>
