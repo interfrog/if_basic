@@ -173,16 +173,20 @@ blockquote {
 }
 
 h1,h2,h3,h4,h5,h6,p,li,div {
-  &[data-align="align-center"] {
+  &[data-align="center"],
+  &.align-center {
     text-align:center;
   }
-  &[data-align="align-left"] {
+  &[data-align="left"],
+  &.align-left {
     text-align:left;
   }
-  &[data-align="align-right"] {
+  &[data-align="right"],
+  &.align-right {
     text-align:right;
   }
-  &[data-align="align-justify"] {
+  &[data-align="justify"],
+  &.align-justify {
     text-align:justify;
   }
 }
