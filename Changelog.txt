@@ -12,6 +12,7 @@
 
 > description of full-width content option
 > Smaller margin after h1
+> Fullscreen option no longer affects headlines
 
 # Headline and text alignment
 # Link Styles missing
