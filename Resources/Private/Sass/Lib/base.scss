@@ -97,6 +97,17 @@ figure {
   &[data-fullscreen="true"] > .innerWrap {
     max-width: inherit;
     width: inherit;
+
+    & > div > h1,
+    & > div > h2,
+    & > div > h3,
+    & > div > h4,
+    & > div > h5,
+    & > div > h6 {
+      max-width: #{$maxwidth}px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   &[data-inview="false"] .innerWrap > .csc-default,
