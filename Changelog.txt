@@ -10,7 +10,7 @@
 
 * Changelog
 
-> description of 
+> description of full-width content option
 > Smaller margin after h1
 
 # Headline and text alignment
