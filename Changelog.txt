@@ -1,0 +1,24 @@
+* = New
+- = Removed
+> = Changed
+# = Bugfix
+
+
+--------------
+----v2.0.1----
+--------------
+
+* Changelog
+
+> description of 
+> Smaller margin after h1
+
+# Headline and text alignment
+# Link Styles missing
+# Image Columns
+
+--------------
+----v2.0.0----
+--------------
+
+Initial Version for TYPO3 8.7
