@@ -10,13 +10,14 @@
 
 * Changelog
 
-> description of full-width content option
+> Description of full-width content option
 > Smaller margin after h1
 > Fullscreen option no longer affects headlines
 
 # Headline and text alignment
 # Link Styles missing
 # Image Columns
+# Sticky footer calculation
 
 --------------
 ----v2.0.0----
