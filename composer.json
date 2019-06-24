@@ -20,8 +20,7 @@
         "GPL-2.0+"
     ],
     "require": {
-        "typo3/cms-core": "9.5.*",
-        "interfrog/if_themeconfiguration": "3.*"
+        "typo3/cms-core": "9.5.*"
     },
     "config": {
         "vendor-dir": ".Build/vendor",
