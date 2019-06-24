@@ -1,7 +1,7 @@
 {
     "name": "interfrog/if_basic",
     "type": "typo3-cms-extension",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "IfPage Basic - Distribution package based upon the if_themeconfiguration extension with basic template and styles",
     "keywords": [
         "TYPO3",
@@ -20,7 +20,8 @@
         "GPL-2.0+"
     ],
     "require": {
-        "typo3/cms-core": "8.*"
+        "typo3/cms-core": "9.5.*",
+        "interfrog/if_themeconfiguration": "3.*"
     },
     "config": {
         "vendor-dir": ".Build/vendor",
