@@ -9,6 +9,7 @@
             'label' => $llPath.'labelposition',
             'config' => array (
                 'type' => 'select',
+                'renderType' => 'selectSingle',
                 'items' => array (
                     array($llPath.'labelposition.default' ,''),
                     array($llPath.'labelposition.right' ,'right'),

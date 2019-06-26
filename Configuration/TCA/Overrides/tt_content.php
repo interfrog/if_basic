@@ -77,7 +77,8 @@ $temporaryColumn = array(
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.sourcetype.vimeo' ,'vimeo'),
                 array('LLL:EXT:'.$extKey.'/Resources/Private/Language/locallang_db.xlf:tt_content.sourcetype.iframe' ,'iframe'),
             ),
-        )
+        ),
+        'onChange' => 'reload'
     ),
     'ratio' => array (
         'exclude' => 1,
@@ -186,8 +187,6 @@ $newPalettes = array(
 foreach ($newPalettes as $key => $value) {
     $GLOBALS['TCA']['tt_content']['palettes'][$key] = $value;
 }
-
-$GLOBALS['TCA']['tt_content']['ctrl']['requestUpdate'] .= ',sourcetype';
 
 /**
  * Video-Frame-Element

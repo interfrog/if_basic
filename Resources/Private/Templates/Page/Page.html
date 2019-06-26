@@ -67,9 +67,9 @@
                 <f:render partial="Headsection" arguments="{_all}" />
                 <f:render partial="RegularContent" arguments="{_all}" />
             </f:case>
-            <f:case default="TRUE">
+            <f:defaultCase>
                 <f:render partial="RegularContent" arguments="{_all}" />
-            </f:case>
+            </f:defaultCase>
         </f:switch>
         <f:comment>
             <f:render partial="Socials" arguments="{_all}" />

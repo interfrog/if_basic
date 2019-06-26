@@ -136,7 +136,7 @@ class FileProvider implements DataProviderInterface {
 			$icon = is_file($iconPublic) ? $iconPublic : $icon;
 
 			if (is_file($icon)) {
-				$icon = '../' . str_replace(PATH_site, '', $icon);
+				$icon = '../' . str_replace(\TYPO3\CMS\Core\Core\Environment::getPublicPath() . '/', '', $icon);
 				$backendLayout->setIconPath($icon);
 				break;
 			}
@@ -156,7 +156,7 @@ class FileProvider implements DataProviderInterface {
 		foreach ($translationFileEndings as $extension) {
 			$file = $filePath . $extension;
 			if (is_file($file)) {
-				$file = str_replace(PATH_site, '', $file);
+				$file = str_replace(\TYPO3\CMS\Core\Core\Environment::getPublicPath() . '/', '', $file);
 				$translatedTitle = $GLOBALS['LANG']->sL('LLL:' . $file . ':' . $fileInformation['filename']);
 				if ($translatedTitle) {
 					$title = $translatedTitle;

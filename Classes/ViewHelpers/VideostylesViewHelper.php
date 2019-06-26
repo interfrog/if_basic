@@ -1,7 +1,7 @@
 <?php
 namespace Interfrog\IfBasic\ViewHelpers;
 
-class VideostylesViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class VideostylesViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper {
 
 	/**
 	 * @param string $width to search in

@@ -1,7 +1,7 @@
 <?php
 namespace Interfrog\IfBasic\ViewHelpers;
 
-class VimeourlViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class VimeourlViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper {
 
 
 	protected $searchStrings = array('/video/');

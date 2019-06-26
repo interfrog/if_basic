@@ -58,7 +58,9 @@ class AjaxUploadController {
 
     public function initTSSettings() {
         if (!isset($_GET['id'])) {
-            $firstTStemplate = $GLOBALS['TYPO3_DB']->exec_SELECTgetSingleRow('pid','sys_template','root=1 AND deleted=0 AND hidden=0');
+            $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('sys_template');
+            $statement = $queryBuilder->select("pid")->from("tt_content")->where('root = 1 AND deleted = 0 AND hidden = 0')->execute();
+            $firstTStemplate = $statement->fetch();
             $pid = $firstTStemplate['pid'];
         } else {
             $pid = $_GET['id'];

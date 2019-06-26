@@ -1,7 +1,7 @@
 <?php
 namespace Interfrog\IfBasic\ViewHelpers;
 
-class YoutubeurlViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class YoutubeurlViewHelper extends \TYPO3Fluid\Fluid\Fluid\Core\ViewHelper\AbstractViewHelper {
 
 
 	protected $searchStrings = array('watch?v=','/embed/');

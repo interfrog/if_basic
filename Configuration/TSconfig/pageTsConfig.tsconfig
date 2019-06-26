@@ -1,0 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:./PageTSconfig/" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:./Gridelements/" extensions="tsconfig">
