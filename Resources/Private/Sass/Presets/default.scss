@@ -1,19 +1,13 @@
 /*** Global Variables ***/
 $absoluteExtPath: '/typo3conf/ext/if_basic/';
 
-
-/*** FONT IMPORT ***/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,500italic,700,700italic,900,900italic,400italic,500);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
-
-
 /*** FONT Variables ***/
-$pagetitlefont: 'Roboto', sans-serif;
-$pagetitle2font: 'Roboto', sans-serif;
-$generalfont: 'Roboto', sans-serif;
-$h1font: 'Roboto', sans-serif;
-$h2font: 'Roboto', sans-serif;
-$h3font: 'Oswald', sans-serif;
+$pagetitlefont: 'Arial', sans-serif;
+$pagetitle2font: 'Arial', sans-serif;
+$generalfont: 'Arial', sans-serif;
+$h1font: 'Arial', sans-serif;
+$h2font: 'Arial', sans-serif;
+$h3font: 'Arial', sans-serif;
 $h4font: inherit;
 $h5font: inherit;
 
