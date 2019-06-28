@@ -11,7 +11,7 @@
 						additionalAttributes="{vh:Validation.DatepickerDataAttribute(field:field, value:'{vh:Misc.PrefillField(field:field)}')}"
 						class="powermail_field powermail_date {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')}" />
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
-				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+				<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>
 		</f:case>
 		<f:case value="hide">
@@ -25,7 +25,7 @@
 		</f:case>
 		<f:defaultCase>
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
-				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+				<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>
 			<f:form.textfield
 						type="{field.datepickerSettingsOptimized}"

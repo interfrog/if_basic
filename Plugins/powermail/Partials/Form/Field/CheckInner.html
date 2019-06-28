@@ -13,7 +13,7 @@
 
 					<label for="powermail_field_{field.marker}_{index.cycle}">
 						<span class="status"></span>
-						<vh:string.RawAndRemoveXss>{setting.label}</vh:string.RawAndRemoveXss>
+						<vh:string.escapeLabels>{setting.label}</vh:string.escapeLabels>
 					</label>
 				</div>
 			</f:for>

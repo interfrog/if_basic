@@ -5,7 +5,7 @@
 		<f:case value="bottom">
 			<f:render partial="Form/Field/AjaxInner" arguments="{_all}" />
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
-				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+				<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>
 		</f:case>
 		<f:case value="hide">
@@ -13,7 +13,7 @@
 		</f:case>
 		<f:defaultCase>
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
-				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+				<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>
 			<f:render partial="Form/Field/AjaxInner" arguments="{_all}" />
 		</f:defaultCase>

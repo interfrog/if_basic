@@ -6,7 +6,7 @@
 			<f:case value="bottom">
 				<f:render partial="Form/Field/RadioInner" arguments="{_all}" />
 				<div class="powermail_label powermail_radio_legend" title="{field.description}">
-					<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+					<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 				</div>
 			</f:case>
 			<f:case value="hide">
@@ -14,7 +14,7 @@
 			</f:case>
 			<f:defaultCase>
 				<div class="powermail_label powermail_radio_legend" title="{field.description}">
-					<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+					<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 				</div>
 				<f:render partial="Form/Field/RadioInner" arguments="{_all}" />
 			</f:defaultCase>
