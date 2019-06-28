@@ -25,7 +25,7 @@
 					multiple="{field.multiselectForField}"
 					value="{vh:Misc.PrefillField(field:field, mail:mail)}" />
 		</f:case>
-		<f:defaultcase>
+		<f:defaultCase>
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
 				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>

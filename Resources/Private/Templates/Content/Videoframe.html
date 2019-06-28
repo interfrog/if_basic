@@ -24,14 +24,14 @@
 					src="{if:vimeourl(url: data.url)}?autoplay={data.autoplay}&title={data.showinfo}&loop={data.videoloop}&byline=0&color=ffffff"
 					frameborder="0"></iframe>
 			</f:case>
-			<f:defaultcase>
+			<f:defaultCase>
 				<iframe 
 					id="videoplayer"
 					type="text/html"
 					width="{f:if(condition:data.imagewidth,then:data.imagewidth,else:900)}"
 					height="{f:if(condition:data.imageheight,then:data.imageheight,else:600)}"
 					src="{if:youtubeurl(url: data.url)}?autoplay={data.autoplay}&showinfo={data.showinfo}&rel={data.showrel}&loop={data.videoloop}" frameborder="0"></iframe>
-			</f:defaultcase>
+			</f:defaultCase>
 		</f:switch>
 	</div>
 	
