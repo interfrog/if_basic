@@ -12,7 +12,7 @@
 			<f:case value="hide">
 				<f:render partial="Form/Field/CheckInner" arguments="{_all}" />
 			</f:case>
-			<f:case default="TRUE">
+			<f:defaultcase>
 				<div class="powermail_label powermail_check_legend" title="{field.description}">
 					<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 				</div>

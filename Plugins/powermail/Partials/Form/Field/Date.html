@@ -23,7 +23,7 @@
 						additionalAttributes="{vh:Validation.DatepickerDataAttribute(field:field, value:'{vh:Misc.PrefillField(field:field)}')}"
 						class="powermail_field powermail_date {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')}" />
 		</f:case>
-		<f:case default="TRUE">
+		<f:defaultcase>
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
 				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>

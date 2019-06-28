@@ -10,9 +10,9 @@
             <f:case value="4">
                 <h5>{slideElement.header}</h5>
             </f:case>
-            <f:case default="TRUE">
+            <f:defaultcase>
                 <h2>{slideElement.header}</h2>
-            </f:case>
+            </f:defaultcase>
         </f:switch>
         <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{slideElement.bodytext}</f:format.html>
     </div>

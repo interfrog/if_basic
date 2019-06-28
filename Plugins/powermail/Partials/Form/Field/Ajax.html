@@ -11,7 +11,7 @@
 		<f:case value="hide">
 			<f:render partial="Form/Field/AjaxInner" arguments="{_all}" />
 		</f:case>
-		<f:case default="TRUE">
+		<f:defaultcase>
 			<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
 				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>
