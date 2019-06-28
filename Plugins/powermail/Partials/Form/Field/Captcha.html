@@ -4,13 +4,12 @@
 	<label for="powermail_field_{field.marker}" class="powermail_label" title="{field.description}">
 		<vh:string.escapeLabels>{field.title}</vh:string.escapeLabels><span class="mandatory">*</span>
 	</label>
-
-	<div class="powermail_captcha_outer {vh:Validation.ErrorClass(field: '{field}', class: 'powermail_field_error')}">
+	<div class="powermail_captcha_outer {vh:Validation.ErrorClass(field:field, class: 'powermail_field_error')}">
 		<f:form.textfield
 				id="powermail_field_{field.marker}"
 				property="{field.marker}"
 				value=""
-				class="powermail_field powermail_captcha {vh:Validation.ErrorClass(field:'field', class:'powermail_field_error')}"
+				class="powermail_field powermail_captcha {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')}"
 				additionalAttributes="{vh:Validation.CaptchaDataAttribute(field:field)}" />
 		<img src="{vh:Validation.Captcha(field:field)}" alt="captcha" class="powermail_captchaimage" id="powermail_captchaimage" />
 
