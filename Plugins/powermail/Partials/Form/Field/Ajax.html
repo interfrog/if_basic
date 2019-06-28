@@ -16,6 +16,6 @@
 				<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 			</label>
 			<f:render partial="Form/Field/AjaxInner" arguments="{_all}" />
-		</f:case>
+		</f:defaultCase>
 	</f:switch>
 </div>

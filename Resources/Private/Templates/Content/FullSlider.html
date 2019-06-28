@@ -24,7 +24,7 @@
                                     <f:if condition="{slideElement.header}">
                                         <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
                                     </f:if>
-                                </div>     
+                                </div>
                             </f:else>
                         </f:if>
                     </f:case>
@@ -36,7 +36,7 @@
                                         <f:if condition="{slideElement.header}">
                                             <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
                                         </f:if>
-                                    </div>     
+                                    </div>
                                 </f:link.page>
                             </f:then>
                             <f:else>
@@ -44,15 +44,15 @@
                                     <f:if condition="{slideElement.header}">
                                         <f:render partial="SlideElementTextbox" arguments="{slideElement:slideElement}" />
                                     </f:if>
-                                </div>     
+                                </div>
                             </f:else>
                         </f:if>
-                    </f:case>
+                    </f:defaultCase>
                 </f:switch>
             </f:for>
         </f:for>
     </div>
 
-    
+
 </f:section>
 </html>

@@ -17,7 +17,7 @@
 					<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
 				</div>
 				<f:render partial="Form/Field/CheckInner" arguments="{_all}" />
-			</f:case>
+			</f:defaultCase>
 		</f:switch>
 	</fieldset>
 </div>
