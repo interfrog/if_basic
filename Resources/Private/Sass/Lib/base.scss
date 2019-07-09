@@ -109,7 +109,7 @@ figure {
       margin-right: auto;
     }
   }
-  
+
   &[data-inview="false"] .innerWrap > .csc-default,
   &[data-inview="false"] .innerWrap > .contentElement {
     margin-top: 5em !important;
@@ -142,7 +142,7 @@ figure {
     }
 
     &.bottomPadding {
-      padding: 0px 0px 0px 4em;
+      padding: 0px 0px 4em 0px;
     }
 
     &.regularPadding,&.topPadding,&.bottomPadding,&.noPadding {
