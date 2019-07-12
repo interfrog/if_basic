@@ -10,7 +10,7 @@ lib.headerContent {
   renderObj {
     stdWrap.outerWrap.cObject >
     stdWrap.outerWrap.cObject < lib.rowWrap
-    stdWrap.outerWrap.cObject.10.10.stdWrap.noTrimWrap = |<div | data-inview="true"><div class="innerWrap">|
+    stdWrap.outerWrap.cObject.10.10.stdWrap.noTrimWrap = |<div | ><div class="innerWrap">|
 
     textpic >
     textpic = COA

@@ -1,19 +1,3 @@
-function elementInViewport() {
-    var rows = document.querySelectorAll('#page .row[data-inview="false"]');
-    if (rows.length < 1) return;
-    var doc = document.documentElement;
-    var pageTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-    rows.forEach(function (row, i) {
-        var top = row.offsetTop;
-        var style = window.getComputedStyle(row, null).getPropertyValue('font-size');
-        var fontSize = parseFloat(style);
-        var transitionBuffer = parseInt(5 * fontSize * i);
-        if ((top - transitionBuffer) <= (parseInt(pageTop) + window.innerHeight)) {
-            row.setAttribute('data-inview', 'true');
-        }
-    });
-}
-
 function updateFooterStickyness() {
     var footer = document.getElementById('pagefooter');
     var footerTop = footer.getBoundingClientRect().top;
@@ -211,14 +195,8 @@ $(document).ready(function () {
     });
 
     $(window).on("resize", function () {
-        elementInViewport();
         updateFooterStickyness();
     });
 
-    $(window).on("scroll", function () {
-        elementInViewport();
-    })
-
-    elementInViewport();
     updateFooterStickyness();
 });

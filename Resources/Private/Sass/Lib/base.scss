@@ -110,18 +110,6 @@ figure {
     }
   }
 
-  &[data-inview="false"] .innerWrap > .csc-default,
-  &[data-inview="false"] .innerWrap > .contentElement {
-    margin-top: 5em !important;
-    opacity: 0;
-  }
-
-  &[data-inview="true"] .innerWrap > .csc-default,
-  &[data-inview="true"] .innerWrap > .contentElement, {
-    margin-top: 0;
-    opacity: 1;
-  }
-
   &[data-colorsheme] {
     padding: 4em 0;
   }

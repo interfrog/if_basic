@@ -9,7 +9,7 @@ lib.rowWrap {
     if.value = 0
     10 = COA
     10 {
-      stdWrap.noTrimWrap = |<div | data-inview="false"><div class="innerWrap">|
+      stdWrap.noTrimWrap = |<div | ><div class="innerWrap">|
       10 = COA
       10 {
         stdWrap.noTrimWrap = | class="row |"|
