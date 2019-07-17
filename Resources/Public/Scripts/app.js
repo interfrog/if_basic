@@ -135,9 +135,18 @@ $(document).ready(function () {
     //inserted for offCanvas
     $(document).on('click', '.mobileMenuTrigger', function (event) {
         event.preventDefault();
-        var action = $(this).attr('data-action');
-        $('#siteWrapper').attr('data-status', action);
+        var siteWrapper = $("#siteWrapper");
+        if(siteWrapper.attr('data-status') == "open") {
+            siteWrapper.attr('data-status', 'close');
+        }else {
+            siteWrapper.attr('data-status', 'open');
+        }
         return false;
+    });
+    $(document).on('click', '#siteWrapper[data-status="open"]', function (event) {
+        if(!$(event.target).hasClass('offCanvasMenu') && $(event.target).parents('.offCanvasMenu').length == 0) {
+            $('#siteWrapper').attr('data-status', 'close');
+        }
     });
 
     $(document).on('click', '.permanentOffCanvasTrigger', function (event) {
